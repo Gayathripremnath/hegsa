@@ -84,10 +84,13 @@ const Home = () => {
           className={`hero-right ${visible ? 'img-in' : 'img-out'}`}
           style={{ backgroundImage: `url(${slide.image})` }}
         >
-          
+        
         </div>
 
-       
+        {/* Center diamond arrow */}
+        <div className="diagonal-arrow" onClick={next}>
+          <span>→</span>
+        </div>
       </section>
 
       <About />
