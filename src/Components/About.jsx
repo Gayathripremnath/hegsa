@@ -1,78 +1,69 @@
 import React from 'react';
 import './About.css';
 
-const stats = [
-  { number: '25+', label: 'Years Experience' },
-  { number: '850+', label: 'Projects Completed' },
-  { number: '120+', label: 'Expert Engineers' },
-  { number: '40+', label: 'Awards Won' },
-];
-
-const About = () => (
-  <section className="about">
-    <div className="about-container">
-
-      {/* Left images */}
-      <div className="about-images">
-        <div className="img-main">
-          <img
-            src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800"
-            alt="Construction site"
-          />
-        </div>
-        <div className="img-secondary">
-          <img
-            src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=600"
-            alt="Engineer at work"
-          />
-          <div className="experience-badge">
-            <span className="exp-number">25</span>
-            <span className="exp-text">Years of<br />Experience</span>
-          </div>
-        </div>
-      </div>
-
-      {/* Right content */}
+const AboutSection = () => {
+  return (
+    <section className="about-container">
       <div className="about-content">
-        <span className="section-tag">About HEGSA</span>
-        <h2 className="section-title">We Build The Future<br />With Strong Foundations</h2>
-        <p className="section-desc">
-          HEGSA Construction has been delivering world-class building solutions for over 25 years.
-          From residential complexes to large-scale infrastructure, we bring precision, safety,
-          and innovation to every project we undertake.
-        </p>
-
-        <div className="about-features">
-          <div className="feature-item">
-            <div className="feature-icon"><i className="fa-solid fa-helmet-safety"></i></div>
-            <div>
-              <h4>Safety First</h4>
-              <p>We maintain the highest safety standards on every job site, protecting our team and clients.</p>
-            </div>
+        
+        {/* Left Side: Images and Circles */}
+        <div className="about-image-wrapper">
+          <div className="circle-outline"></div>
+          <div className="main-image-container">
+            <img 
+              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNvbnN0cnVjdGlvbnxlbnwwfHwwfHx8MA%3D%3D" 
+              alt="Engineers" 
+              className="main-img" 
+            />
           </div>
-          <div className="feature-item">
-            <div className="feature-icon"><i className="fa-solid fa-award"></i></div>
-            <div>
-              <h4>Award Winning</h4>
-              <p>Recognized globally for excellence in construction quality and project delivery.</p>
+          <div className="experience-badge">
+            <span className="exp-number">24</span>
+            <span className="exp-text">Years Experience</span>
+          </div>
+          {/* Decorative dark blobs */}
+          <div className="blob blob-1"></div>
+          <div className="blob blob-2"></div>
+        </div>
+
+        {/* Right Side: Text Content */}
+        <div className="about-text-content">
+          <h4 className="sub-title">ABOUT US —</h4>
+          <h2 className="main-title">A Company To Change The World We're Konta Industrial.</h2>
+          <p className="description">
+            Proactively pontificate client-centered relationships vis-a-vis process 
+            centric leadership skills. Credibly maintain focused internal or "organic" 
+            sources rather than vertical alignments.
+          </p>
+
+          <div className="video-features-row">
+            <div className="video-thumb">
+              <img src="https://www.freepik.com/free-video/construction-workers-discussing-blueprint_6337638#fromView=search&page=1&position=49&uuid=6c00e95a-14e3-4ee6-98af-dbeb1934e817" alt="Video" />
+              <button className="play-btn">▶</button>
+            </div>
+            <ul className="features-list">
+              <li>First Class Quality Service</li>
+              <li>Service with reasonable price</li>
+              <li>Immediate 24/7 Emergency</li>
+              <li>Intentional development authority</li>
+              <li>Stylistic formula method</li>
+            </ul>
+          </div>
+
+          <div className="footer-action">
+            <button className="about-btn">ABOUT MORE →</button>
+            <div className="ceo-info">
+              <img src="https://via.placeholder.com/50" alt="CEO" className="ceo-avatar" />
+              <div className="ceo-sign">
+                <span className="signature">M. Adam</span>
+                <span className="designation">CEO, Of Company</span>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="about-stats">
-          {stats.map((s, i) => (
-            <div className="stat-item" key={i}>
-              <span className="stat-number">{s.number}</span>
-              <span className="stat-label">{s.label}</span>
-            </div>
-          ))}
-        </div>
-
-        <button className="btn-orange">DISCOVER MORE →</button>
       </div>
+    </section>
+  );
+};
 
-    </div>
-  </section>
-);
-
-export default About;
+export default AboutSection;

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
 import About from './About';
+import bg1 from '../assets/bg1.png';
 
 const slides = [
   {
@@ -13,7 +14,7 @@ const slides = [
     tagline: '# Trusted Since 2005',
     title: 'WE BUILD YOUR\nDREAM PROJECTS',
     desc: 'Professionally deliver superior construction solutions with a commitment to quality, safety, and innovation. Your vision is our mission.',
-    image: 'https://plus.unsplash.com/premium_photo-1681691911660-a40d4163ed9f?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTczfHxjb25zdHJ1Y3Rpb24lMjBzaXRlfGVufDB8fDB8fHww',
+    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=2070',
   },
   {
     tagline: '# Expert Engineers',
@@ -51,7 +52,12 @@ const Home = () => {
 
   return (
     <>
-      <section className="hero">
+      {/* bg1.png fills the entire hero */}
+      <section className="hero" style={{ backgroundImage: `url("${bg1}")` }}>
+
+        {/* dark overlay on left for text readability */}
+        <div className="hero-overlay" />
+
         {/* Left content */}
         <div className="hero-left">
           <div className={`hero-text-content ${visible ? 'slide-in' : 'slide-out'}`}>
@@ -79,12 +85,18 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Right image */}
+        {/* Right: slider image placed ON TOP of bg1 */}
         <div
           className={`hero-right ${visible ? 'img-in' : 'img-out'}`}
           style={{ backgroundImage: `url(${slide.image})` }}
         >
-        
+          <button className="arrow-btn arrow-prev" onClick={prev}><span>←</span></button>
+          <button className="arrow-btn arrow-next" onClick={next}><span>→</span></button>
+          <div className="slide-counter">
+            <span className="current-num">0{current + 1}</span>
+            <span className="sep"> / </span>
+            <span className="total-num">0{slides.length}</span>
+          </div>
         </div>
 
         {/* Center diamond arrow */}
