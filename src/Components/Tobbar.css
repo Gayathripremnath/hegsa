@@ -76,5 +76,27 @@
 
 /* ── Small mobile ── */
 @media (max-width: 480px) {
-  .header-top { display: none; }
+  .header-top { display: block; }
+
+  /* Keep only phone + email visible on very small screens */
+  .lang-select,
+  .top-social {
+    display: none;
+  }
+
+  .top-container {
+    justify-content: center;
+    padding: 8px 12px;
+  }
+
+  .header-links ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-right: 0;
+  }
+
+  .header-links a {
+    font-size: 12px;
+  }
 }

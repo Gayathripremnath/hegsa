@@ -32,7 +32,11 @@ const Navbar = () => {
           <button className="btn-quote-top">GET A QUOTE →</button>
         </div>
 
-        <button className="hamburger" onClick={() => setOpen(!open)}>
+        <button
+          className={`hamburger ${open ? 'open' : ''}`}
+          onClick={() => setOpen(!open)}
+          aria-label={open ? 'Close menu' : 'Open menu'}
+        >
           <span></span>
           <span></span>
           <span></span>

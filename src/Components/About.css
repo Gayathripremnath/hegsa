@@ -150,9 +150,12 @@
 }
 
 .features-list li::before {
-  content: '->';
+  content: '\f061';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
   color: var(--dark-blue);
   margin-right: 10px;
+  font-size: 0.9rem;
 }
 
 .features-list li {

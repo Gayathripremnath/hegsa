@@ -125,16 +125,23 @@
     background: #fff;
   }
 
+  .nav-content { padding: 8px 0; }
+
   .hamburger { display: flex; }
 
   .hamburger span {
     background: #0b0d17;
   }
 
+  /* X (close) icon when menu is open */
+  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
   .nav-links {
     display: none;
     position: absolute;
-    top: 80px;
+    top: 100%;
     left: 0;
     width: 100%;
     background: #fff;
@@ -149,7 +156,7 @@
   .nav-links li { color: #0b0d17; }
 
   .nav-actions { gap: 12px; }
-  .search-icon { color: #0b0d17; }
+  .search-icon { display: none; }
   .btn-quote-top { display: none; }
   .logo { clip-path: none; min-width: unset; padding: 12px 20px; }
 }
