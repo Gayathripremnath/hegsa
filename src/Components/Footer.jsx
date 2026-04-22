@@ -19,11 +19,9 @@ const Footer = () => {
         <div className="footer-main-grid">
           <div className="footer-brand-col">
             <a href="/" className="footer-logo" aria-label="Konta Home">
-              <span className="footer-logo-mark">
-                <i className="fa-solid fa-house"></i>
-              </span>
+             
               <span className="footer-logo-text">
-                <strong>KONTA</strong>
+                <strong>HEGSA</strong>
                 <small>Construction Industry</small>
               </span>
             </a>
@@ -83,7 +81,7 @@ const Footer = () => {
 
         <div className="footer-bottom-bar">
           <p>
-            Copyright &copy; 2024 <span>Themeholy.</span> All Rights Reserved.
+            Copyright &copy; 2026 Genova Technologies. All Rights Reserved.
           </p>
           <div className="footer-bottom-links">
             <a href="#">Privacy Policy</a>

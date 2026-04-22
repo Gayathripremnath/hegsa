@@ -223,6 +223,7 @@
   background: var(--panel-bg);
   padding: 90px 6% 96px;
   overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .services-section::before {
@@ -1119,20 +1120,20 @@
 }
 
 .testimonial-text i {
-  color: #;
+  color: #0b1026;
   margin-right: 7px;
   font-size: 0.85rem;
 }
 
 .testimonial-name {
   margin: 0 0 2px;
-  color: #f2a31a;
+  color: #031725;
   font-size: 1.1rem;
 }
 
 .testimonial-role {
   margin: 0;
-  color: #586079;
+  color: #e3e6f0;
   font-size: 0.85rem;
 }
 
@@ -1151,13 +1152,13 @@
     margin: 0 auto;
   }
 }
-
 /* BLOG SECTION START */
 .blog-section {
   position: relative;
   background: #f5f6f8;
   padding: 86px 6% 96px;
   overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .blog-section::before {

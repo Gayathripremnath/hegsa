@@ -4,6 +4,7 @@ import Topbar from './Components/Topbar'
 import Navbar from './Components/Navbar'
 import Home from './Components/Home'
 import ScrollProgress from './Components/ScrollProgress'
+import Footer from './Components/Footer'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
+      <Footer />
       <ScrollProgress />
     </BrowserRouter>
   )
