@@ -11,7 +11,6 @@
 .hero-left {
   width: 52%;
   flex-shrink: 0;
-  background-image: url('https://st4.depositphotos.com/1885147/40836/v/1600/depositphotos_408365760-stock-illustration-abstract-architectural-wallpaper-design-digital.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,19 +21,7 @@
   z-index: 2;
 }
 
-.hero-left::after {
-  content: '';
-  position: absolute;
-  right: -90px;
-  top: 0;
-  width: 180px;
-  height: 100%;
-  background-image: url('https://st4.depositphotos.com/1885147/40836/v/1600/depositphotos_408365760-stock-illustration-abstract-architectural-wallpaper-design-digital.jpg');
-  background-size: 200% auto;
-  background-position: right center;
-  transform: skewX(-7deg);
-  z-index: 1;
-}
+
 
 /* ── Text content ── */
 .hero-text-content {
