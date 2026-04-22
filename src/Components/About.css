@@ -14,6 +14,7 @@
 
 /* ── Images ── */
 .about-images {
+  border-radius: 30px;
   position: relative;
   flex-shrink: 0;
   width: 480px;
@@ -21,6 +22,7 @@
 
 .img-main img {
   width: 360px;
+ border-radius: 50px;
   height: 480px;
   object-fit: cover;
   display: block;
@@ -28,6 +30,7 @@
 
 .img-secondary {
   position: absolute;
+   border-radius: 40px;
   bottom: -40px;
   right: 0;
   width: 220px;
@@ -35,6 +38,7 @@
 
 .img-secondary img {
   width: 100%;
+   border-radius: 40px;
   height: 260px;
   object-fit: cover;
   display: block;
@@ -43,6 +47,7 @@
 }
 
 .experience-badge {
+  border-radius: 30px;
   position: absolute;
   top: -30px;
   left: -30px;
@@ -128,6 +133,7 @@
 }
 
 .feature-icon {
+  border-radius: 30px;
   width: 52px;
   height: 52px;
   background: #213d55;
