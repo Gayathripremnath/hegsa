@@ -182,7 +182,7 @@ const AboutSection = () => {
           <div className="about-text-content">
             <h4 className="sub-title">ABOUT US -</h4>
             <h2 className="main-title1">A Company To Change The World We&apos;re Konta Industrial.</h2>
-            <p className="description">
+            <p className="description1">
               Proactively pontificate client-centered relationships vis-a-vis process centric leadership skills.
               Credibly maintain focused internal or "organic" sources rather than vertical alignments.
             </p>
