@@ -19,7 +19,7 @@ const Navbar = () => {
         </div>
 
         <ul className={`nav-links ${open ? 'open' : ''}`}>
-          <li className="active" onClick={() => setOpen(false)}>HOME +</li>
+          <li className="active" onClick={() => setOpen(false)}>HOME </li>
           <li onClick={() => setOpen(false)}>ABOUT US</li>
           <li onClick={() => setOpen(false)}>SERVICE</li>
           <li onClick={() => setOpen(false)}>TEAM</li>
