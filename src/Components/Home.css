@@ -267,7 +267,7 @@
 
 .vm-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 18px;
 }
 
@@ -406,19 +406,13 @@
 
   .hero-left::after { display: none; }
 
-  .hero-right {
-    position: relative;
-    width: 100%;
-    height: 50vw;
-    min-height: 300px;
-    clip-path: none;
-  }
+  .hero-right { display: none; }
 
   .diagonal-arrow { display: none; }
 
   .main-title { font-size: 42px; }
 
-  .slide-counter { left: 5%; }
+  .slide-counter { display: none; }
 
   .vm-section { padding: 60px 5% 46px; }
   .vm-title { font-size: 30px; }
@@ -431,7 +425,7 @@
   .description { font-size: 13px; }
   .btn-orange, .btn-dark { padding: 13px 22px; font-size: 13px; }
   .hero-left { min-height: 55vh; padding: 50px 5% 70px; }
-  .hero-right { height: 55vw; }
+  .hero-right { display: none; }
   .slide-dots { bottom: 20px; }
 }
 
@@ -441,7 +435,7 @@
   .tagline { font-size: 13px; }
   .hero-btns { flex-direction: column; gap: 10px; }
   .btn-orange, .btn-dark { width: 100%; text-align: center; }
-  .hero-right { height: 65vw; }
+  .hero-right { display: none; }
   .arrow-btn { width: 38px; height: 38px; font-size: 14px; }
   .arrow-prev { right: 55px; }
 }

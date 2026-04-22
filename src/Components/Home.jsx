@@ -24,34 +24,29 @@ const slides = [
   },
 ];
 
-const vmCards = [
-  {
-    title: 'OUR VISION',
-    icon: 'fa-eye',
-    lead:
-      'Our vision is to provide the highest standards of quality and value to our clients. To achieve this, we offer an advantage over our completion in terms of our:',
-    bullets: [
-      'Collaborative and hands-on approach.',
-    ],
-  },
-  {
-    title: 'OUR MISSION',
-    icon: 'fa-bullseye',
-    lead: 'To consistent deliver satisfactory job.',
-    bullets: [
-      'Renovation maintenance & services that satisfy the needs of our customers.',
-    ],
-  },
-  {
-    title: 'OUR OBJECTIVES',
-    icon: 'fa-flag-checkered',
-    lead:
-      'We are committed to deliver provable & excellence performance by focusing on the following:',
-    bullets: [
-      "Minimize the customers' budget.",
-    ],
-  },
-];
+// Vision/Mission/Objectives cards (commented out per request)
+// const vmCards = [
+//   {
+//     title: 'OUR VISION',
+//     icon: 'fa-eye',
+//     lead:
+//       'Our vision is to provide the highest standards of quality and value to our clients. To achieve this, we offer an advantage over our completion in terms of our:',
+//     bullets: ['Collaborative and hands-on approach.'],
+//   },
+//   {
+//     title: 'OUR MISSION',
+//     icon: 'fa-bullseye',
+//     lead: 'To consistent deliver satisfactory job.',
+//     bullets: ['Renovation maintenance & services that satisfy the needs of our customers.'],
+//   },
+//   {
+//     title: 'OUR OBJECTIVES',
+//     icon: 'fa-flag-checkered',
+//     lead:
+//       'We are committed to deliver provable & excellence performance by focusing on the following:',
+//     bullets: ["Minimize the customers' budget."],
+//   },
+// ];
 
 const Home = () => {
   const [current, setCurrent] = useState(0);
@@ -132,6 +127,8 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Vision/Mission/Objectives section (commented out per request) */}
+      {/*
       <section className="vm-section">
         <div className="vm-wrap">
           <div className="vm-grid">
@@ -154,6 +151,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      */}
 
       <About />
     </>

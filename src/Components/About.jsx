@@ -205,7 +205,7 @@ const AboutSection = () => {
             </div>
 
             <div className="footer-action">
-              <button className="about-btn">ABOUT MORE -&gt;</button>
+              <button className="about-btn">ABOUT MORE &gt;</button>
               <div className="ceo-info">
                 <img src="https://via.placeholder.com/50" alt="CEO" className="ceo-avatar" />
                 <div className="ceo-sign">
@@ -225,7 +225,7 @@ const AboutSection = () => {
               <p className="services-kicker">OUR SERVICES</p>
               <h2 className="services-title">The Best Service For You</h2>
             </div>
-            <button className="services-cta">VIEW ALL SERVICES -&gt;</button>
+            <button className="services-cta">VIEW ALL SERVICES &gt;</button>
           </div>
 
           <div className="services-grid">

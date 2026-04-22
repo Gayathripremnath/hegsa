@@ -90,13 +90,16 @@
   }
 
   .header-links ul {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 8px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 14px;
     margin-right: 0;
   }
 
   .header-links a {
     font-size: 12px;
+    white-space: nowrap;
   }
 }
