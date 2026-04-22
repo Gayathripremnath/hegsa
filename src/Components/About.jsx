@@ -117,7 +117,7 @@ const blogs = [
     author: 'Alone Mask',
     date: 'March 15, 2024',
     image:
-      'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1482731215275-a1f151646268?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fGNvbnN0cnVjdGlvbiUyMHNpdGV8ZW58MHx8MHx8fDA%3D',
   },
 ];
 
@@ -181,7 +181,7 @@ const AboutSection = () => {
 
           <div className="about-text-content">
             <h4 className="sub-title">ABOUT US -</h4>
-            <h2 className="main-title1">A Company To Change The World We&apos;re Konta Industrial.</h2>
+            <h2 className="main-title1">A Company To Change The World We&apos;re Hegsa Industrial.</h2>
             <p className="description1">
               Proactively pontificate client-centered relationships vis-a-vis process centric leadership skills.
               Credibly maintain focused internal or "organic" sources rather than vertical alignments.
@@ -193,7 +193,7 @@ const AboutSection = () => {
                   src="https://images.unsplash.com/photo-1590650046871-92c887180603?auto=format&fit=crop&w=900&q=80"
                   alt="Video"
                 />
-                <button className="play-btn">&gt;</button>
+                
               </div>
               <ul className="features-list">
                 <li>First Class Quality Service</li>
@@ -205,14 +205,8 @@ const AboutSection = () => {
             </div>
 
             <div className="footer-action">
-              <button className="about-btn">ABOUT MORE &gt;</button>
-              <div className="ceo-info">
-                <img src="https://via.placeholder.com/50" alt="CEO" className="ceo-avatar" />
-                <div className="ceo-sign">
-                  <span className="signature">M. Adam</span>
-                  <span className="designation">CEO, Of Company</span>
-                </div>
-              </div>
+              <button className="about-btn">ABOUT MORE</button>
+            
             </div>
           </div>
         </div>
@@ -374,7 +368,7 @@ const AboutSection = () => {
             <div className="why-right">
               <div className="why-media-card">
                 <img
-                  src="https://images.unsplash.com/photo-1581094482523-8555833e6aba?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRlYW0lMjBlbmdpbmVlcnN8ZW58MHx8MHx8fDA%3D"
+                  src="https://plus.unsplash.com/premium_photo-1681823100546-0541b5880f14?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29uc3RydWN0aW9uJTIwc2l0ZXxlbnwwfHwwfHx8MA%3D%3D"
                   alt="Team engineers"
                 />
               

@@ -53,7 +53,7 @@
   line-height: 1;
 }
 
-.scroll-progress:hover { background: #294256; }
+.scroll-progress:hover { background: #c7d2db; }
 
 @media (max-width: 480px) {
   .scroll-progress { bottom: 18px; right: 18px; }
