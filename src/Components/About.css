@@ -921,17 +921,26 @@
   }
 
   .main-image-container {
+    width: 260px;
+    height: 270px;
     margin: 0 auto;
   }
 
   .circle-outline {
+    width: 270px;
+    height: 285px;
     left: 50%;
     transform: translateX(-50%);
   }
 
   .experience-badge {
+    width: 90px;
+    height: 90px;
     right: 10%;
   }
+
+  .exp-number { font-size: 2rem; }
+  .exp-text { font-size: 0.7rem; }
 
   .services-head {
     align-items: flex-start;
@@ -985,20 +994,23 @@
   }
 
   .main-image-container {
-    width: min(92vw, 320px);
-    height: min(95vw, 330px);
+    width: min(75vw, 220px);
+    height: min(78vw, 230px);
   }
 
   .circle-outline {
-    width: min(95vw, 332px);
-    height: min(97vw, 350px);
+    width: min(78vw, 232px);
+    height: min(80vw, 245px);
   }
 
   .experience-badge {
-    width: 110px;
-    height: 110px;
-    border-width: 6px;
+    width: 80px;
+    height: 80px;
+    border-width: 5px;
   }
+
+  .exp-number { font-size: 1.6rem; }
+  .exp-text { font-size: 0.65rem; }
 
   .services-section {
     padding: 70px 5% 74px;
@@ -1018,11 +1030,23 @@
   }
 
   .process-step {
-    max-width: 290px;
+    max-width: 200px;
   }
 
   .process-circle {
-    min-height: 194px;
+    min-height: 130px;
+    padding: 28px 18px 18px;
+  }
+
+  .process-circle h3 { font-size: 14px; }
+  .process-circle p  { font-size: 10px; }
+
+  .process-icon {
+    width: 46px;
+    height: 46px;
+    font-size: 1.1rem;
+    top: -14px;
+    left: 8px;
   }
 
   .why-body {
@@ -1377,7 +1401,16 @@
   .service-icon { width: 58px; height: 58px; top: 146px; }
 
   .work-process-section { padding: 64px 5% 74px; }
-  .process-title { font-size: 2.6rem; margin-bottom: 28px; }
+  .process-title { font-size: 2rem; margin-bottom: 28px; }
+
+  .process-step { max-width: 160px; }
+  .process-circle { min-height: 100px; padding: 26px 14px 16px; }
+  .process-circle h3 { font-size: 13px; }
+  .process-circle p  { font-size: 10px; }
+  .process-icon { width: 48px; height: 48px; font-size: 1.1rem; top: -14px; left: 8px; }
+
+  .main-image-container { width: 240px; height: 250px; }
+  .circle-outline { width: 252px; height: 265px; }
 
   .why-choose-section { padding: 64px 5% 92px; }
   .why-title { font-size: 2.6rem; }

@@ -252,7 +252,7 @@ const AboutSection = () => {
               </article>
             ))}
           </div>
-
+            
           <div className="services-dots">
             {services.map((_, index) => (
               <button
