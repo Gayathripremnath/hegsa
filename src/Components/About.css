@@ -45,12 +45,12 @@
 .circle-outline {
   position: absolute;
   top: -20px;
-  left: 80px;
-  width: 400px;
-  height: 420px;
+  left: 70px;
+  width: 390px;
+  height: 390px;
   border: 2px solid #294256;
   border-radius: 50%  10% / 35%;
-  z-index: 1000;
+  z-index: 3;
 }
 
 .experience-badge {
@@ -66,7 +66,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 3;
+  z-index: 10;
   border: 8px solid #fff;
 }
 
