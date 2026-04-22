@@ -244,7 +244,7 @@ const AboutSection = () => {
                 </div>
                 <div className="service-card-body">
                   <button type="button" className="service-arrow" aria-label={service.title}>
-                    -&gt;
+                    <span className="service-arrow-icon" aria-hidden="true"></span>
                   </button>
                   <h3>{service.title}</h3>
                   <p>{service.desc}</p>

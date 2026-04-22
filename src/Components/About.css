@@ -376,10 +376,39 @@
   border: none;
   display: grid;
   place-items: center;
-  font-size: 1.3rem;
-  font-weight: 700;
   cursor: pointer;
   transition: background-color 0.25s ease;
+}
+
+.service-arrow-icon {
+  width: 20px;
+  height: 12px;
+  position: relative;
+  display: block;
+}
+
+.service-arrow-icon::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 14px;
+  height: 2px;
+  background: #fff;
+  transform: translateY(-50%);
+  border-radius: 2px;
+}
+
+.service-arrow-icon::after {
+  content: '';
+  position: absolute;
+  right: 1px;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: translateY(-50%) rotate(45deg);
 }
 
 .service-card:hover,
@@ -571,6 +600,7 @@
 }
 
 .why-choose-section {
+  
   position: relative;
   padding: 88px 6% 170px;
   background: #f5f6f8;
@@ -593,7 +623,7 @@
 }
 
 .why-choose-wrap {
-  max-width: 1260px;
+  max-width: 1220px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -1332,3 +1362,51 @@
   }
 }
 /* BLOG SECTION END */
+
+@media (max-width: 768px) {
+  .services-section { padding: 64px 5% 70px; }
+  .services-title { font-size: 2.2rem; }
+  .services-cta { padding: 14px 18px; font-size: 0.95rem; }
+
+  .service-image-wrap { height: 180px; }
+  .service-card-body { padding: 18px 16px 18px 72px; }
+  .service-arrow { height: 96px; width: 46px; }
+  .service-icon { width: 58px; height: 58px; top: 146px; }
+
+  .work-process-section { padding: 64px 5% 74px; }
+  .process-title { font-size: 2.6rem; margin-bottom: 28px; }
+
+  .why-choose-section { padding: 64px 5% 92px; }
+  .why-title { font-size: 2.6rem; }
+  .why-tab { width: 56px; height: 56px; font-size: 1.7rem; }
+  .why-play-btn { width: 130px; height: 130px; }
+
+  .testimonials-section { padding: 64px 5% 70px; }
+  .blog-section { padding: 64px 5% 74px; }
+}
+
+@media (max-width: 480px) {
+  .services-kicker { font-size: 0.95rem; }
+  .services-title { font-size: 1.95rem; }
+
+  .service-card-body h3 { font-size: 1.45rem; }
+  .service-card-body p { font-size: 0.92rem; }
+
+  .process-title { font-size: 2.1rem; }
+  .process-kicker { font-size: 0.95rem; }
+  .process-kicker::before,
+  .process-kicker::after { width: 38px; }
+
+  .why-title { font-size: 2.1rem; }
+  .why-tab { width: 52px; height: 52px; font-size: 1.55rem; }
+  .why-detail h3 { font-size: 2rem; }
+
+  .choose-stat-icon { width: 72px; height: 72px; border-width: 8px; font-size: 1.7rem; }
+  .choose-stat-value { font-size: 2.2rem; }
+
+  .testimonials-kicker { font-size: 1.55rem; }
+  .testimonials-title { font-size: 2rem; }
+
+  .blog-title { font-size: 2.2rem; }
+  .blog-body { padding: 18px 18px 20px; }
+}

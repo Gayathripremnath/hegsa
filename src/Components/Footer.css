@@ -249,3 +249,15 @@
     align-items: flex-start;
   }
 }
+
+@media (max-width: 480px) {
+  .footer-logo-text strong { font-size: 2rem; }
+  .footer-socials a { width: 44px; height: 44px; }
+  .footer-links-col h4,
+  .footer-subscribe-col h4 { font-size: 1.7rem; }
+
+  .footer-subscribe-form input { min-height: 54px; }
+  .footer-subscribe-form button { width: 54px; }
+
+  .footer-bottom-links { gap: 10px; flex-wrap: wrap; }
+}

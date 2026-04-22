@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
 import About from './About';
-import bg1 from '../assets/bg1.png';
+import bg4 from '../assets/bg4.png';
 
 const slides = [
   {
@@ -21,6 +21,35 @@ const slides = [
     title: 'STRONG FOUNDATIONS\nBRIGHT FUTURES',
     desc: 'Our experienced team of engineers and architects bring decades of expertise to every project, ensuring excellence from groundbreaking to completion.',
     image: 'https://plus.unsplash.com/premium_photo-1661723468924-62073f1c3125?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fGNvbnN0cnVjdGlvbnxlbnwwfHwwfHx8MA%3D%3D',
+  },
+];
+
+const vmCards = [
+  {
+    title: 'OUR VISION',
+    icon: 'fa-eye',
+    lead:
+      'Our vision is to provide the highest standards of quality and value to our clients. To achieve this, we offer an advantage over our completion in terms of our:',
+    bullets: [
+      'Collaborative and hands-on approach.',
+    ],
+  },
+  {
+    title: 'OUR MISSION',
+    icon: 'fa-bullseye',
+    lead: 'To consistent deliver satisfactory job.',
+    bullets: [
+      'Renovation maintenance & services that satisfy the needs of our customers.',
+    ],
+  },
+  {
+    title: 'OUR OBJECTIVES',
+    icon: 'fa-flag-checkered',
+    lead:
+      'We are committed to deliver provable & excellence performance by focusing on the following:',
+    bullets: [
+      "Minimize the customers' budget.",
+    ],
   },
 ];
 
@@ -52,8 +81,8 @@ const Home = () => {
 
   return (
     <>
-      {/* bg1.png fills the entire hero */}
-      <section className="hero" style={{ backgroundImage: `url("${bg1}")` }}>
+    
+      <section className="hero" style={{ backgroundImage:`url("${bg4}")` }}>
 
         {/* dark overlay on left for text readability */}
         <div className="hero-overlay" />
@@ -85,7 +114,6 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Right: slider image placed ON TOP of bg1 */}
         <div
           className={`hero-right ${visible ? 'img-in' : 'img-out'}`}
           style={{ backgroundImage: `url(${slide.image})` }}
@@ -101,6 +129,29 @@ const Home = () => {
         {/* Center diamond arrow */}
         <div className="diagonal-arrow" onClick={next}>
           <span>→</span>
+        </div>
+      </section>
+
+      <section className="vm-section">
+        <div className="vm-wrap">
+          <div className="vm-grid">
+            {vmCards.map((card) => (
+              <article key={card.title} className="vm-card">
+                <div className="vm-card-top">
+                  <span className="vm-card-icon" aria-hidden="true">
+                    <i className={`fa-solid ${card.icon}`}></i>
+                  </span>
+                  <h3 className="vm-card-title">{card.title}</h3>
+                </div>
+                <p className="vm-card-lead">{card.lead}</p>
+                <ul className="vm-card-list">
+                  {card.bullets.map((b) => (
+                    <li key={b}>{b}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
