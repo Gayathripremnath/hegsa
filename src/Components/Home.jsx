@@ -14,13 +14,13 @@ const slides = [
     tagline: '# Trusted Since 2005',
     title: 'WE BUILD YOUR\nDREAM PROJECTS',
     desc: 'Professionally deliver superior construction solutions with a commitment to quality, safety, and innovation. Your vision is our mission.',
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=2070',
+    image: 'https://plus.unsplash.com/premium_photo-1681691912442-68c4179c530c?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29uc3RydWN0aW9ufGVufDB8fDB8fHww',
   },
   {
     tagline: '# Expert Engineers',
     title: 'STRONG FOUNDATIONS\nBRIGHT FUTURES',
     desc: 'Our experienced team of engineers and architects bring decades of expertise to every project, ensuring excellence from groundbreaking to completion.',
-    image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=80&w=2070',
+    image: 'https://plus.unsplash.com/premium_photo-1661723468924-62073f1c3125?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fGNvbnN0cnVjdGlvbnxlbnwwfHwwfHx8MA%3D%3D',
   },
 ];
 
@@ -90,8 +90,7 @@ const Home = () => {
           className={`hero-right ${visible ? 'img-in' : 'img-out'}`}
           style={{ backgroundImage: `url(${slide.image})` }}
         >
-          <button className="arrow-btn arrow-prev" onClick={prev}><span>←</span></button>
-          <button className="arrow-btn arrow-next" onClick={next}><span>→</span></button>
+          
           <div className="slide-counter">
             <span className="current-num">0{current + 1}</span>
             <span className="sep"> / </span>

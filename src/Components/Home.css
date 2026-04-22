@@ -186,7 +186,7 @@
 /* ── Center diamond arrow ── */
 .diagonal-arrow {
   position: absolute;
-  left: 43.5%;
+  left: 52%;
   top: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
   background: #345b86;
