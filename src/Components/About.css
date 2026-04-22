@@ -694,7 +694,7 @@
   clip-path: polygon(0 0, 76% 0, 100% 24%, 100% 100%, 0 100%);
   background: #fff;
   color: #111729;
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -713,13 +713,14 @@
 
 .why-detail h3 {
   margin: 2px 0 10px;
-  color: #171d2e;
-  font-size: 3rem;
+  color: #12222f;
+  font-size: 1.65rem;
+  font-weight: 700;
 }
 
 .why-detail > p {
   margin: 0 0 16px;
-  color: #4f5a73;
+  color: #29303e;
   font-size: 1.05rem;
   line-height: 1.52;
   font-family: 'Rubik', sans-serif;
@@ -789,43 +790,13 @@
   display: block;
 }
 
-.why-play-btn {
-  position: absolute;
-  left: 40%;
-  bottom: 26px;
-  width: 176px;
-  height: 176px;
-  border: none;
-  border-radius: 12px;
-  background: linear-gradient(145deg, #0a1330, #14192f);
-  z-index: 2;
-  cursor: pointer;
-}
 
-.why-play-btn::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 12px;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.08), transparent 55%);
-}
 
-.why-play-btn span {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  background: #fff;
-  color: #0a1330;
-  display: inline-grid;
-  place-items: center;
-  font-size: 1.7rem;
-  position: relative;
-  z-index: 1;
-}
+
 
 .choose-stats {
   margin-top: 58px;
-  background: linear-gradient(130deg, #303748, #242b3a);
+  background: linear-gradient(130deg, #1e394b, #0e426f);
   border-radius: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);

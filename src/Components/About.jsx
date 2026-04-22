@@ -41,21 +41,21 @@ const services = [
 
 const chooseItems = [
   {
-    title: 'Mission',
+    title: 'MISSION',
     desc: 'Assertively deliver client-centered communities without frictionless services.',
     image:
       'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=800&q=80',
     points: ['Commercial Services', 'Residential Services', 'Industrial Services', 'Construction Service'],
   },
   {
-    title: 'Vision',
+    title: 'VISION',
     desc: 'Progressively transform practical opportunities with measurable outcomes for every project.',
     image:
       'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80',
     points: ['Smart Planning', 'Expert Coordination', 'Faster Delivery', 'Strong Quality Control'],
   },
   {
-    title: 'Value',
+    title: 'VALUE',
     desc: 'Professionally cultivate trusted partnerships through safety, quality, and transparent execution.',
     image:
       'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
