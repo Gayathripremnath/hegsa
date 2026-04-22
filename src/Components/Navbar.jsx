@@ -1,12 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    if (open) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [open]);
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${open ? 'mobile-open' : ''}`}>
       <div className="nav-content">
         <div className="logo">
           <img src={logo} alt="HEGSA Logo" className="logo-img" />
