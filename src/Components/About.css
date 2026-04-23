@@ -530,8 +530,8 @@
   margin: 0 auto;
   transition: transform 0.25s ease;
 }
-circle
-.process- {
+
+.process-circle {
   position: relative;
   min-height: 108px;
   border-radius: 50%;
