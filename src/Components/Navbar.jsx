@@ -33,7 +33,7 @@ const Navbar = () => {
         </div>
 
         <button
-          className={`hamburger ${open ? 'open' : ''}`}
+          className={`hamburger ${open ? 'open' : ''}`} style={{ background: "black" }}
           onClick={() => setOpen(!open)}
           aria-label={open ? 'Close menu' : 'Open menu'}
         >

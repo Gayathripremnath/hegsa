@@ -91,27 +91,32 @@
   .header-links ul {
     gap: 10px;
   }
+
+  /* Hide extra items on smaller screens per request */
+  .top-social,
+  .lang-select,
+  .divider {
+    display: none;
+  }
 }
 
 /* ── Mobile ── */
 @media (max-width: 768px) {
   .header-top {
-    background: #11131b;
+    background: #fff;
     height: auto;
-    padding: 10px 0;
+    padding: 12px 0;
   }
-
   .top-container {
     flex-direction: column;
-    gap: 10px;
+    justify-content: center;
   }
-
-  .header-links a,
-  .lang-select {
-    color: #fff;
+  .header-links a { 
+    color: #555; 
+    justify-content: center;
   }
-
-  .v-divider {
-    display: none;
+  .header-links ul {
+    justify-content: center;
+    width: 100%;
   }
 }
