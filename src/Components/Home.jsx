@@ -76,8 +76,8 @@ const Home = () => {
 
   return (
     <>
-    
-      <section className="hero" style={{ backgroundImage:`url("${bg4}")` }}>
+
+      <section className="hero" style={{ backgroundImage: `url("${bg4}")` }}>
 
         {/* dark overlay on left for text readability */}
         <div className="hero-overlay" />
@@ -113,7 +113,7 @@ const Home = () => {
           className={`hero-right ${visible ? 'img-in' : 'img-out'}`}
           style={{ backgroundImage: `url(${slide.image})` }}
         >
-          
+
           <div className="slide-counter">
             <span className="current-num">0{current + 1}</span>
             <span className="sep"> / </span>

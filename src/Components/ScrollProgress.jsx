@@ -14,7 +14,7 @@ const ScrollProgress = () => {
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
       const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
       setProgress(pct);
-      setVisible(scrollTop > 100);
+      setVisible(scrollTop > 50);
     };
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
