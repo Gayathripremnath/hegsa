@@ -48,22 +48,32 @@ const AboutUs = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (!timelineRef.current) return;
+      // Timeline scroll logic
+      if (timelineRef.current) {
+        const { top, height } = timelineRef.current.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        const start = windowHeight / 2;
+        let progress = (start - top) / height;
+        progress = Math.max(0, Math.min(1, progress));
+        setScrollProgress(progress * 100);
+      }
 
-      const { top, height } = timelineRef.current.getBoundingClientRect();
+      // Reveal scroll animation logic
+      const reveals = document.querySelectorAll('.reveal');
       const windowHeight = window.innerHeight;
-
-      // Calculate how far we've scrolled into the timeline
-      const start = windowHeight / 2;
-      let progress = (start - top) / height;
-
-      // Clamp between 0 and 1
-      progress = Math.max(0, Math.min(1, progress));
-      setScrollProgress(progress * 100);
+      const elementVisible = 100;
+      
+      reveals.forEach((reveal) => {
+        const elementTop = reveal.getBoundingClientRect().top;
+        if (elementTop < windowHeight - elementVisible) {
+          reveal.classList.add('active');
+        }
+      });
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Initial check
+    // Trigger on mount to check if elements are already in view
+    setTimeout(handleScroll, 100);
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -71,15 +81,19 @@ const AboutUs = () => {
     <div className="about-us-page">
       <section className="about-hero">
         <div className="container">
-          <h1>Who We Are</h1>
-          <p className="subtitle">Hegsa - Leading Excellence in Construction and Maintenance</p>
+          <h1 className="reveal zoom-in">ABOUT US</h1>
+          <p className="subtitle reveal fade-up delay-200">Hegsa - Leading Excellence in Construction and Maintenance</p>
         </div>
       </section>
 
       <section className="about-intro-section">
         <div className="container">
+          <div className="section-intro-header reveal fade-up">
+            <span className="small-heading">ABOUT US</span>
+            <div className="accent-line"></div>
+          </div>
           <div className="about-intro-grid">
-            <div className="about-intro-media">
+            <div className="about-intro-media reveal fade-left">
                <div className="images-container">
                  <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800" alt="Construction site main" className="main-image" />
                  <div className="small-image-wrapper">
@@ -91,7 +105,7 @@ const AboutUs = () => {
                </div>
             </div>
             
-            <div className="about-intro-text">
+            <div className="about-intro-text reveal fade-right delay-200">
               <span className="kicker">CONSTRUCTION COMPANY</span>
               <h2>Excellence in Construction & Maintenance Solutions.</h2>
               <p className="lead-text">
@@ -119,7 +133,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div className="about-bg-text">ABOUT HEGSA</div>
+        <div className="about-bg-text">ABOUT US</div>
       </section>
 
       <section className="vision-mission-objectives dark-timeline-section">
@@ -131,7 +145,7 @@ const AboutUs = () => {
             </div>
 
             {timelineData.map((item, index) => (
-              <div key={index} className={`timeline-row ${index % 2 === 0 ? 'left' : 'right'}`}>
+              <div key={index} className={`timeline-row ${index % 2 === 0 ? 'left' : 'right'} reveal fade-up`}>
                 <div className="timeline-content text-content">
                   <div className="timeline-card">
                     <span className="bg-number">{item.id}</span>
@@ -158,36 +172,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <section className="policy-section">
-        <div className="container">
-          <div className="policy-content">
-            <h2 className="section-title">HEGSA POLICY</h2>
-            <div className="policy-text">
-              <p>
-                Hegsa aims to achieve the highest standards of, Health, Safety and Environment, incorporating the
-                principles of sustainable development throughout its worldwide business.
-              </p>
-              <p>
-                Hegsa identifies the health and safety of its employees, contractors and visitors, the satisfaction of its
-                customers, the protection of the environment and the development of the communities where it has
-                its operations as integrated key drivers of its business; the entire organization is oriented towards
-                achieving these goals openly and transparently.
-              </p>
-              <p>
-                Health, Safety and Environment management and risk assessment fundamentals are integrated in all
-                business processes. Management is responsible and accountable for achieving excellence in Health,
-                Safety and Environmental performance for successful business results.
-              </p>
-              <p>
-                Hegsa is committed to training all its employees in the appropriate use of its Health, Safety and
-                Environment management systems, strengthening its management through updating of professional
-                and managerial skills, fostering diversity, emphasizing employee evaluation and motivation and
-                complying with the ethical principles established in its code of conduct.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       {/* <section className="clients-section">
         <div className="container">

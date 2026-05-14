@@ -236,9 +236,7 @@
     flex-direction: column;
   }
   .services-page .sidebar {
-    width: 100%;
-    flex: none;
-    margin-bottom: 40px;
+    display: none;
   }
 }
 
