@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     if (open) {
@@ -11,20 +13,36 @@ const Navbar = () => {
     }
   }, [open]);
 
+  const isActive = (path) => location.pathname === path;
+
   return (
     <nav className={`navbar ${open ? 'mobile-open' : ''}`}>
       <div className="nav-content">
         <div className="logo">
-          <img src={logo} alt="HEGSA Logo" className="logo-img" />
+          <Link to="/" onClick={() => setOpen(false)}>
+            <img src={logo} alt="HEGSA Logo" className="logo-img" />
+          </Link>
         </div>
 
         <ul className={`nav-links ${open ? 'open' : ''}`}>
-          <li className="active" onClick={() => setOpen(false)}>HOME </li>
-          <li onClick={() => setOpen(false)}>ABOUT US</li>
-          <li onClick={() => setOpen(false)}>SERVICE</li>
-          <li onClick={() => setOpen(false)}>TEAM</li>
-          <li onClick={() => setOpen(false)}>BLOG</li>
-          <li onClick={() => setOpen(false)}>CONTACT US</li>
+          <li className={isActive('/') ? 'active' : ''} onClick={() => setOpen(false)}>
+            <Link to="/">HOME</Link>
+          </li>
+          <li className={isActive('/about') ? 'active' : ''} onClick={() => setOpen(false)}>
+            <Link to="/about">ABOUT US</Link>
+          </li>
+          <li className={isActive('/services') ? 'active' : ''} onClick={() => setOpen(false)}>
+            <Link to="/services">SERVICE</Link>
+          </li>
+          <li className={isActive('/team') ? 'active' : ''} onClick={() => setOpen(false)}>
+            <Link to="/team">TEAM</Link>
+          </li>
+          <li className={isActive('/blog') ? 'active' : ''} onClick={() => setOpen(false)}>
+            <Link to="/blog">BLOG</Link>
+          </li>
+          <li className={isActive('/contact') ? 'active' : ''} onClick={() => setOpen(false)}>
+            <Link to="/contact">CONTACT US</Link>
+          </li>
         </ul>
 
         <div className="nav-actions">

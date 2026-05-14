@@ -1,0 +1,255 @@
+/* Services.css */
+.services-page {
+  background-color: #ffffff;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.services-page .container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Section */
+.services-page .services-header {
+  background: linear-gradient(rgba(245, 245, 245, 0.85), rgba(245, 245, 245, 0.85)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2070') center/cover no-repeat;
+  padding: 80px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.services-page .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services-page .header-left h1 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  font-weight: 500;
+  margin: 0;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.services-page .header-right span {
+  font-size: 1.05rem;
+  color: #333;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+/* Main Layout Wrapper */
+.services-page .services-main-content {
+  padding: 80px 0;
+}
+
+.services-page .layout-wrapper {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* Sidebar */
+.services-page .sidebar {
+  flex: 0 0 280px;
+  position: sticky;
+  top: 120px;
+  height: max-content;
+  z-index: 10;
+}
+
+.services-page .sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 50px 0;
+}
+
+.services-page .sidebar-menu li {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.services-page .sidebar-menu li:first-child {
+  border-top: 1px solid #f0f0f0;
+}
+
+.services-page .sidebar-menu li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  color: #888;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.services-page .sidebar-menu li a i {
+  font-size: 0.65rem;
+}
+
+.services-page .sidebar-menu li a:hover {
+  color: #d35400; /* Matching the orange from the image */
+}
+
+.services-page .sidebar-menu li.active a {
+  color: #d35400;
+}
+
+.services-page .sidebar-brochures h3 {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  font-weight: 600;
+  margin: 0;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* Services Grid */
+.services-page .services-grid-wrapper {
+  flex: 1;
+}
+
+.services-page .services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.services-page .service-card {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-page .card-image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.services-page .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.services-page .service-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.services-page .card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-page .card-content h3 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.4rem;
+  color: #1a1a1a;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.services-page .card-content .desc {
+  font-size: 0.95rem;
+  color: #777;
+  line-height: 1.6;
+  margin: 0 0 15px 0;
+  font-family: sans-serif;
+}
+
+.services-page .card-details-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  flex: 1;
+}
+
+.services-page .card-details-list li {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 8px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.services-page .read-more {
+  color: #d35400;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  display: inline-block;
+  margin-top: auto;
+  transition: color 0.3s ease;
+}
+
+.services-page .read-more:hover {
+  color: #e67e22;
+}
+
+/* Facades Section (Kept untouched but matching colors roughly) */
+.services-page .facades-section {
+  padding: 100px 0;
+  background: #1a1a1a;
+  color: white;
+}
+
+.services-page .facade-card {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services-page .facade-card h2 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.services-page .facade-card p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #cccccc;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .services-page .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .services-page .layout-wrapper {
+    flex-direction: column;
+  }
+  .services-page .sidebar {
+    width: 100%;
+    flex: none;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-page .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .services-page .header-container {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}

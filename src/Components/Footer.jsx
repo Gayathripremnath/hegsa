@@ -1,13 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
-const quickLinks = ['About Us', 'Services', 'Projects', 'Blog Post', 'Contact Us'];
+const quickLinks = [
+  { name: 'About Us', path: '/about' },
+  { name: 'Services', path: '/services' },
+  { name: 'Team', path: '/team' },
+  { name: 'Blog', path: '/blog' },
+  { name: 'Contact Us', path: '/contact' },
+];
+
 const serviceLinks = [
-  'Building Construction',
-  'Projects Plannings',
-  'Interior Developments',
-  'Virtual Design & Build',
-  'Petroleum Oil & Gas',
+  'General Maintenance',
+  'Civil Works',
+  'MEP Works',
+  'False Ceiling',
+  'Aluminium & Glass',
 ];
 
 const Footer = () => {
@@ -18,17 +26,16 @@ const Footer = () => {
       <div className="footer-wrap">
         <div className="footer-main-grid">
           <div className="footer-brand-col">
-            <a href="/" className="footer-logo" aria-label="Konta Home">
-             
+            <Link to="/" className="footer-logo">
               <span className="footer-logo-text">
                 <strong>HEGSA</strong>
-                <small>Construction Industry</small>
+                <small>Industrial & Construction</small>
               </span>
-            </a>
+            </Link>
 
             <p className="footer-brand-text">
-              Quickly supply alternative strategic theme areas vis-a-vis B2C mindshare.
-              Objectively repurpose architectures.
+              Hegsa provides high-performance building facades and construction services across Dubai, Sharjah and UAE.
+              Commitment to quality and safety.
             </p>
 
             <div className="footer-socials">
@@ -43,11 +50,11 @@ const Footer = () => {
             <h4>QUICK LINKS</h4>
             <ul>
               {quickLinks.map((item) => (
-                <li key={item}>
-                  <a href="#">
+                <li key={item.name}>
+                  <Link to={item.path}>
                     <i className="fa-solid fa-arrow-right"></i>
-                    {item}
-                  </a>
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -58,30 +65,29 @@ const Footer = () => {
             <ul>
               {serviceLinks.map((item) => (
                 <li key={item}>
-                  <a href="#">
+                  <Link to="/services">
                     <i className="fa-solid fa-arrow-right"></i>
                     {item}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
           <div className="footer-subscribe-col">
-            <h4>Subscribe</h4>
-            <p>Subscribe For Our Latest News & Articles.</p>
-            <form className="footer-subscribe-form" onSubmit={(e) => e.preventDefault()}>
-              <input type="email" placeholder="Enter Email" aria-label="Email address" />
-              <button type="submit" aria-label="Send">
-                <i className="fa-solid fa-paper-plane"></i>
-              </button>
-            </form>
+            <h4>INQUIRY</h4>
+            <div className="contact-info">
+              <p><strong>Sivakumar:</strong><br /> +971 54 792 7093 / +971 50 494 1329</p>
+              <p><strong>Vipin Das:</strong><br /> +971 54 792 7090</p>
+              <p><strong>Land Line:</strong><br /> +971 4 886 8848</p>
+              <p><strong>Website:</strong><br /> www.hegsauae.com</p>
+            </div>
           </div>
         </div>
 
         <div className="footer-bottom-bar">
           <p>
-            Copyright &copy; 2026 Genova Technologies. All Rights Reserved.
+            Copyright &copy; 2026 HEGSA Industrial. All Rights Reserved.
           </p>
           <div className="footer-bottom-links">
             <a href="#">Privacy Policy</a>

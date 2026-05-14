@@ -1,0 +1,180 @@
+.team-page {
+  padding-top: 80px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.team-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1521737711867-e3b904787a2a?q=80&w=2070') center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.team-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+/* Team Grid */
+.team-grid-section {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.team-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.team-image {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
+.team-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.team-card:hover .team-image img {
+  transform: scale(1.1);
+}
+
+.team-socials {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  background: rgba(227, 30, 36, 0.9);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  transition: bottom 0.3s ease;
+}
+
+.team-card:hover .team-socials {
+  bottom: 0;
+}
+
+.team-socials a {
+  color: white;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+.team-socials a:hover {
+  transform: scale(1.2);
+}
+
+.team-info {
+  padding: 25px;
+  text-align: center;
+}
+
+.team-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.team-info .role {
+  color: #e31e24;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.team-info .phone {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.team-info .phone i {
+  color: #e31e24;
+  margin-right: 5px;
+}
+
+/* Join Us */
+.join-us {
+  padding-bottom: 100px;
+  background: #f8f9fa;
+}
+
+.join-card {
+  background: #222;
+  color: white;
+  padding: 60px;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.join-card h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.join-card p {
+  font-size: 1.1rem;
+  opacity: 0.8;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-orange {
+  background: #e31e24;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-orange:hover {
+  background: white;
+  color: #e31e24;
+}
+
+@media (max-width: 992px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,150 @@
+.blog-page {
+  padding-top: 80px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.blog-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1590644365607-1c5a519a7a37?q=80&w=2070') center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.blog-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+/* Blog Grid */
+.blog-content-section {
+  padding: 100px 0;
+  background: #fcfcfc;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.blog-item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.blog-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image {
+  position: relative;
+  height: 250px;
+}
+
+.blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-date {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #e31e24;
+  color: white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  line-height: 1;
+}
+
+.blog-date span {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.blog-date small {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.blog-info {
+  padding: 25px;
+}
+
+.blog-meta {
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.blog-meta span {
+  margin-right: 15px;
+}
+
+.blog-meta i {
+  color: #e31e24;
+  margin-right: 5px;
+}
+
+.blog-info h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.blog-info p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.read-more {
+  background: none;
+  border: none;
+  color: #e31e24;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: gap 0.3s ease;
+}
+
+.read-more:hover {
+  gap: 15px;
+}
+
+@media (max-width: 1024px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}

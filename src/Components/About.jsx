@@ -1,27 +1,28 @@
 import React, { useEffect, useMemo, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './About.css';
 
 const services = [
   {
-    title: 'Projects Plannings',
-    desc: 'Diestarbcse engage the resource maximizing process temparatorse.',
+    title: 'Joinery work',
+    desc: 'Specializing in custom wood craftsmanship to bring your vision to life. Our Capabilities Includes',
     icon: 'fa-lightbulb',
-    image:
-      'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=80',
+    image:  
+      'https://images.unsplash.com/photo-1705760058049-b58119c416a9?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fEpPSU5FUlklMjBXT1JLU3xlbnwwfHwwfHx8MA%3D%3D',
   },
   {
-    title: 'Interior Developments',
-    desc: 'Moertsartis engage the resource maximizing process gataronsonse.',
+    title: 'Wooden polishing work',
+    desc: 'We offer professional wooden polishing services.',
     icon: 'fa-screwdriver-wrench',
     image:
       'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80',
   },
   {
-    title: 'Virtual Design & Build',
-    desc: 'Gattisbarti engage the resource maximizing process materialistic.',
+    title: 'Aluminium & Glass work',
+    desc: 'We are the specialists in providing a comprehensive.',
     icon: 'fa-compass-drafting',
     image:
-      'https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1723051390199-ea18f291141e?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fEFMVU1JTklVTSUyMCUyNiUyMEdMQVNTJTIwV09SS3xlbnwwfHwwfHx8MA%3D%3D',
   },
   {
     title: 'Building & Engineering',
@@ -181,10 +182,9 @@ const AboutSection = () => {
 
           <div className="about-text-content">
             <h4 className="sub-title">ABOUT US -</h4>
-            <h2 className="main-title1">A Company To Change The World We&apos;re Hegsa Industrial.</h2>
+            <h2 className="main-title1">Excellence in Construction & Maintenance Solutions.</h2>
             <p className="description1">
-              Proactively pontificate client-centered relationships vis-a-vis process centric leadership skills.
-              Credibly maintain focused internal or "organic" sources rather than vertical alignments.
+              Hegsa is a leading provider of complete system solutions for aluminum glass, skylights, and comprehensive maintenance works in Dubai and across the UAE. We are committed to delivering highest standards of quality and value to our clients.
             </p>
 
             <div className="video-features-row">
@@ -219,7 +219,7 @@ const AboutSection = () => {
               <p className="services-kicker">OUR SERVICES</p>
               <h2 className="services-title">The Best Service For You</h2>
             </div>
-            <button className="services-cta">VIEW ALL SERVICES &gt;</button>
+            <Link to="/services" className="services-cta">VIEW ALL SERVICES &gt;</Link>
           </div>
 
           <div className="services-grid">

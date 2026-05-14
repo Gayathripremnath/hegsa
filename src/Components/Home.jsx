@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 import About from './About';
 import bg4 from '../assets/bg4.png';
@@ -24,29 +25,7 @@ const slides = [
   },
 ];
 
-// Vision/Mission/Objectives cards (commented out per request)
-// const vmCards = [
-//   {
-//     title: 'OUR VISION',
-//     icon: 'fa-eye',
-//     lead:
-//       'Our vision is to provide the highest standards of quality and value to our clients. To achieve this, we offer an advantage over our completion in terms of our:',
-//     bullets: ['Collaborative and hands-on approach.'],
-//   },
-//   {
-//     title: 'OUR MISSION',
-//     icon: 'fa-bullseye',
-//     lead: 'To consistent deliver satisfactory job.',
-//     bullets: ['Renovation maintenance & services that satisfy the needs of our customers.'],
-//   },
-//   {
-//     title: 'OUR OBJECTIVES',
-//     icon: 'fa-flag-checkered',
-//     lead:
-//       'We are committed to deliver provable & excellence performance by focusing on the following:',
-//     bullets: ["Minimize the customers' budget."],
-//   },
-// ];
+
 
 const Home = () => {
   const [current, setCurrent] = useState(0);
@@ -93,8 +72,8 @@ const Home = () => {
             </h1>
             <p className="description">{slide.desc}</p>
             <div className="hero-btns">
-              <button className="btn-orange">OUR SERVICES →</button>
-              <button className="btn-dark">GET A QUOTE →</button>
+              <Link to="/services" className="btn-orange">OUR SERVICES →</Link>
+              <Link to="/contact" className="btn-dark">GET A QUOTE →</Link>
             </div>
           </div>
 
@@ -127,32 +106,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Vision/Mission/Objectives section (commented out per request) */}
-      {/*
-      <section className="vm-section">
-        <div className="vm-wrap">
-          <div className="vm-grid">
-            {vmCards.map((card) => (
-              <article key={card.title} className="vm-card">
-                <div className="vm-card-top">
-                  <span className="vm-card-icon" aria-hidden="true">
-                    <i className={`fa-solid ${card.icon}`}></i>
-                  </span>
-                  <h3 className="vm-card-title">{card.title}</h3>
-                </div>
-                <p className="vm-card-lead">{card.lead}</p>
-                <ul className="vm-card-list">
-                  {card.bullets.map((b) => (
-                    <li key={b}>{b}</li>
-                  ))}
-                </ul>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-      */}
-
+  
       <About />
     </>
   );

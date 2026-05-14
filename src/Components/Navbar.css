@@ -59,15 +59,19 @@
   font-family: 'Rajdhani', sans-serif;
   font-size: 14px;
   font-weight: 700;
-  color: #fff;
-  cursor: pointer;
   letter-spacing: 1px;
-  transition: color 0.3s;
   text-transform: uppercase;
 }
 
-.nav-links li:hover,
-.nav-links li.active {
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  display: block;
+}
+
+.nav-links li:hover a,
+.nav-links li.active a {
   color: #265275;
 }
 
@@ -169,9 +173,17 @@
   }
 
   .nav-links li {
-    color: #11131b;
     padding: 12px 0;
     border-bottom: 1px solid #eee;
+  }
+
+  .nav-links li a {
+    color: #11131b;
+  }
+
+  .nav-links li:hover a,
+  .nav-links li.active a {
+    color: #265275;
   }
 
   .nav-actions {

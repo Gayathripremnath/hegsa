@@ -119,6 +119,8 @@
 
 .btn-orange,
 .btn-dark {
+  display: inline-block;
+  text-decoration: none;
   padding: 16px 32px;
   border: none;
   font-family: 'Rajdhani', sans-serif;
