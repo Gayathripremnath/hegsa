@@ -5,11 +5,28 @@ import { servicesList } from './servicesData';
 
 const Services = () => {
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
+    const handleScroll = () => {
+      const reveals = document.querySelectorAll('.reveal');
+      const windowHeight = window.innerHeight;
+      const elementVisible = 100;
+      
+      reveals.forEach((reveal) => {
+        const elementTop = reveal.getBoundingClientRect().top;
+        if (elementTop < windowHeight - elementVisible) {
+          reveal.classList.add('active');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    setTimeout(handleScroll, 100);
+
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const handleImageLoad = (e) => {
+    e.target.classList.add('loaded');
+  };
   return (
     <div className="services-page">
       <section className="services-header">
@@ -42,9 +59,18 @@ const Services = () => {
           <main className="services-grid-wrapper">
             <div className="services-grid">
               {servicesList.map((service, index) => (
-                <div key={service.id} className="service-card">
-                  <div className="card-image">
-                    <img src={service.image} alt={service.title} />
+                <div 
+                  key={service.id} 
+                  className={`service-card reveal fade-up`} 
+                  style={{ transitionDelay: `${(index % 3) * 0.1}s` }}
+                >
+                  <div className="card-image skeleton-loader">
+                    <img 
+                      src={service.image} 
+                      alt={service.title} 
+                      onLoad={handleImageLoad}
+                      loading="lazy"
+                    />
                   </div>
                   <div className="card-content">
                     <h3>{service.title}</h3>

@@ -11,19 +11,19 @@
 
 /* Hero Section */
 .about-hero {
-  background: linear-gradient(rgba(4, 28, 61, 0.75), rgba(4, 28, 61, 0.75)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=2000') center/cover no-repeat;
-  height: 400px;
+  background: linear-gradient(rgba(212, 219, 229, 0.75), rgba(158, 168, 183, 0.75)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=2000') center/cover no-repeat;
+  height: 220px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: rgb(9, 44, 82);
 }
 
 .about-hero h1 {
   font-family: 'Rajdhani', sans-serif;
   font-size: 3.5rem;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 10px;
   letter-spacing: 2px;
   text-transform: uppercase;

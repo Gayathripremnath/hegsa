@@ -133,12 +133,13 @@
 }
 
 .btn-orange {
-  background: #204263;
+  background: #001830 !important;
   color: #fff;
 }
 
 .btn-orange:hover {
-  background: #1a3550;
+  background: #041b3374 !important;
+  color: rgb(2, 13, 50) !important;
 }
 
 .btn-dark {

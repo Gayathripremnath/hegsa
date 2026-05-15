@@ -8,11 +8,28 @@ const ServiceDetails = () => {
   const service = servicesList.find((s) => s.id === id);
 
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
+    const handleScroll = () => {
+      const reveals = document.querySelectorAll('.reveal');
+      const windowHeight = window.innerHeight;
+      const elementVisible = 50;
+      
+      reveals.forEach((reveal) => {
+        const elementTop = reveal.getBoundingClientRect().top;
+        if (elementTop < windowHeight - elementVisible) {
+          reveal.classList.add('active');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    setTimeout(handleScroll, 100);
+
+    return () => window.removeEventListener('scroll', handleScroll);
   }, [id]);
+
+  const handleImageLoad = (e) => {
+    e.target.classList.add('loaded');
+  };
 
   if (!service) {
     return (
@@ -55,9 +72,14 @@ const ServiceDetails = () => {
           </aside>
 
           <main className="services-grid-wrapper">
-            <div className="service-details-content">
-              <div className="details-image" style={{ width: '100%', height: '400px', overflow: 'hidden', marginBottom: '30px' }}>
-                <img src={service.image} alt={service.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <div className="service-details-content reveal fade-up">
+              <div className="details-image skeleton-loader" style={{ width: '100%', height: '400px', overflow: 'hidden', marginBottom: '30px' }}>
+                <img 
+                  src={service.image} 
+                  alt={service.title} 
+                  onLoad={handleImageLoad}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                />
               </div>
               <h2 style={{ fontFamily: '"Rajdhani", sans-serif', fontSize: '2rem', color: '#1a1a1a', marginBottom: '20px', textTransform: 'uppercase' }}>
                 {service.title}

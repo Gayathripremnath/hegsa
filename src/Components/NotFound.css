@@ -1,0 +1,158 @@
+.not-found-container {
+  padding: 100px 0;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: #fcfcfc;
+}
+
+.not-found-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.illustration-wrapper {
+  width: 100%;
+  max-width: 600px;
+}
+
+.not-found-img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
+  border-radius: 12px;
+}
+
+.text-wrapper h1 {
+  display: none; /* Already in the image */
+}
+
+.text-wrapper h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #d35400;
+  margin: 0 0 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.text-wrapper p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn-primary {
+  padding: 15px 35px;
+  background: #1a1a1a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border: 1px solid #1a1a1a;
+}
+
+.btn-primary:hover {
+  background: #d35400;
+  border-color: #d35400;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(211, 84, 0, 0.2);
+}
+
+.btn-secondary {
+  padding: 15px 35px;
+  background: transparent;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border: 1px solid #1a1a1a;
+}
+
+.btn-secondary:hover {
+  background: #1a1a1a;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25vw;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.03);
+  z-index: 1;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* Animations (matching existing design system) */
+.reveal {
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.fade-up {
+  transform: translateY(50px);
+}
+
+.fade-up.active {
+  transform: translateY(0);
+}
+
+.zoom-in {
+  transform: scale(0.8);
+}
+
+.zoom-in.active {
+  transform: scale(1);
+}
+
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
+.delay-400 { transition-delay: 0.4s; }
+
+@media (max-width: 768px) {
+  .text-wrapper h1 {
+    font-size: 5rem;
+  }
+  .text-wrapper h2 {
+    font-size: 1.8rem;
+  }
+  .action-buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .btn-primary, .btn-secondary {
+    text-align: center;
+  }
+}

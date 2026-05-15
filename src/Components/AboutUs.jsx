@@ -124,7 +124,7 @@ const AboutUs = () => {
                 <div className="founder-info">
                   <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=150" alt="CEO" className="founder-img" />
                   <div className="founder-details">
-                    <span className="founder-name">Daniel H. Smith</span>
+                    <span className="founder-name">Sivakumar</span>
                     <span className="founder-title">Founder & Ceo</span>
                   </div>
                 </div>
