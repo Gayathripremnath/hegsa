@@ -246,6 +246,13 @@
 }
 
 @media (max-width: 992px) {
+  .section-intro-header {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  .section-intro-header .accent-line {
+    margin: 10px 0 0;
+  }
   .about-intro-grid {
     grid-template-columns: 1fr;
     gap: 60px;
@@ -788,6 +795,15 @@
   .about-intro-text .kicker,
   .about-intro-text .lead-text {
     text-align: center;
+  }
+  
+  .section-intro-header {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .section-intro-header .accent-line {
+    margin: 10px 0 0;
   }
 
   .modern-features-list {
