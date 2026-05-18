@@ -10,9 +10,6 @@ const Topbar = () => (
           <li><a href="mailto:info@hegsa.com"><i className="fa-solid fa-envelope"></i> info@hegsa.com</a></li>
         </ul>
       </div>
-      <div className="lang-select">
-        <i className="fa-solid fa-globe"></i> English <i className="fa-solid fa-chevron-down"></i>
-      </div>
       <span className="divider">|</span>
       <div className="top-social">
         <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
