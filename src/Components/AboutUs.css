@@ -193,12 +193,14 @@
 
 .main-description {
   color: #555555;
+  font-weight: 500;
   font-size: 1rem;
   line-height: 1.6;
   margin: 0;
 }
 
 .section-divider {
+  
   border: 0;
   border-top: 1px solid #f1f1f1;
   margin: 0.5rem 0;
@@ -206,6 +208,7 @@
 
 /* Feature Item Rows */
 .feature-item {
+  
   display: flex;
   align-items: flex-start;
   gap: 1rem;
@@ -238,13 +241,13 @@
 
 .feature-text p {
   color: #666666;
+  font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.5;
   margin: 0;
 }
 
 
-/* --- DYNAMIC TABS SECTION (VISION/MISSION/OBJECTIVES) --- */
 .tabs-section-container {
   background-color: #fcfcfc;
   padding: 5rem 1.5rem;
@@ -392,6 +395,7 @@
 }
 
 .info-main-desc {
+  font-weight: 500;
   font-size: 1rem;
   color: #666666;
   line-height: 1.6;
@@ -426,6 +430,7 @@
 }
 
 .point-text-string {
+  font-weight: 500;
   font-size: 0.95rem;
   color: #555555;
   margin: 0;
