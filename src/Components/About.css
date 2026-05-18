@@ -1211,7 +1211,8 @@
 }
 
 .blog-kicker {
-  margin: 0;
+  margin: 0 0 0 50%;
+  transform: translateX(-50%);
   color: #0b1026;
   font-size: 0.96rem;
   font-weight: 700;
@@ -1220,8 +1221,6 @@
   align-items: center;
   gap: 12px;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .blog-kicker::before,
@@ -1239,6 +1238,7 @@
   color: #0a1026;
   font-size: clamp(2rem, 4vw, 3.2rem);
   line-height: 1.05;
+  position: relative;
 }
 
 .blog-grid {
@@ -1415,7 +1415,11 @@
 
   .testimonials-kicker { font-size: 1.55rem; }
   .testimonials-title { font-size: 2rem; }
-
+  .blog-date{
+    margin-top: 6px;
+     font-size: .5rem !important;
+  
+  }
   .blog-title { font-size: 2.2rem; }
   .blog-body { padding: 18px 18px 20px; }
 }
