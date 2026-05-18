@@ -5,7 +5,17 @@ import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   useEffect(() => {
     if (open) {
@@ -16,7 +26,7 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className={`navbar ${open ? 'mobile-open' : ''}`}>
+    <nav className={`navbar ${open ? 'mobile-open' : ''} ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-content">
         <div className="logo">
           <Link to="/" onClick={() => setOpen(false)}>
