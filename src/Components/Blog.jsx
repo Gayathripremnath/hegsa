@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import './Blog.css';
 
 const Blog = () => {
-  const blogPosts = [
+  const blogPosts = useMemo(() => [
     {
       category: 'Construction',
       title: 'Modern Construction Techniques in UAE',
       excerpt: 'Discover the latest construction methodologies being implemented across Dubai and UAE. From sustainable building practices to innovative materials, learn how the industry is evolving.',
       date: 'Jan 15, 2024',
       author: 'HEGSA Team',
-      image: 'https://images.unsplash.com/photo-1743819336189-71deffe7835b?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TW9kZXJuJTIwQ29uc3RydWN0aW9uJTIwVGVjaG5pcXVlcyUyMGluJTIwVUFFfGVufDB8fDB8fHww'
+      image: 'https://images.unsplash.com/photo-1743819336189-71deffe7835b?w=600&auto=format&fit=crop&q=60'
     },
     {
       category: 'Maintenance',
@@ -17,24 +17,23 @@ const Blog = () => {
       excerpt: 'Regular maintenance is crucial for preserving the value and functionality of your property. Learn the key maintenance practices that every building owner should know.',
       date: 'Jan 10, 2024',
       author: 'HEGSA Team',
-      image: 'https://images.unsplash.com/photo-1607400201515-c2c41c07d307?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8RXNzZW50aWFsJTIwQnVpbGRpbmclMjBNYWludGVuYW5jZSUyMFRpcHN8ZW58MHx8MHx8fDA%3D'
-
+      image: 'https://images.unsplash.com/photo-1607400201515-c2c41c07d307?w=600&auto=format&fit=crop&q=60'
     },
     {
       category: 'Design',
-      title: 'Interior Design Trends 2026',
+      title: 'Interior Design Trends 2024',
       excerpt: 'Explore the hottest interior design trends shaping homes and offices in 2024. From minimalist aesthetics to bold color choices, find inspiration for your next project.',
-      date: 'Jan 05, 2026',
+      date: 'Jan 05, 2024',
       author: 'HEGSA Team',
-      image: 'https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8SW50ZXJpb3IlMjBEZXNpZ24lMjBUcmVuZHN8ZW58MHx8MHx8fDA%3D'
+      image: 'https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=600&auto=format&fit=crop&q=60'
     },
     {
       category: 'Safety',
       title: 'Workplace Safety in Construction',
       excerpt: 'Safety is our top priority. Learn about the comprehensive safety measures and protocols we implement to ensure a secure working environment for all our projects.',
-      date: 'Dec 28, 2026',
+      date: 'Dec 28, 2023',
       author: 'HEGSA Team',
-      image: 'https://images.unsplash.com/photo-1552879890-3a06dd3a06c2?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8V29ya3BsYWNlJTIwU2FmZXR5JTIwaW4lMjBDb25zdHJ1Y3Rpb258ZW58MHx8MHx8fDA%3D'
+      image: 'https://images.unsplash.com/photo-1552879890-3a06dd3a06c2?w=600&auto=format&fit=crop&q=60'
     },
     {
       category: 'Technology',
@@ -42,7 +41,7 @@ const Blog = () => {
       excerpt: 'The future of construction is smart. Discover how IoT and automation are transforming buildings into intelligent, energy-efficient spaces that enhance comfort and reduce costs.',
       date: 'Dec 20, 2023',
       author: 'HEGSA Team',
-      image: 'https://plus.unsplash.com/premium_photo-1728776080559-7cdfa5b68991?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTF8fFNtYXJ0JTIwQnVpbGRpbmclMjBTb2x1dGlvbnN8ZW58MHx8MHx8fDA%3D'
+      image: 'https://images.unsplash.com/photo-1558002038-1055907df827?w=600&auto=format&fit=crop&q=60'
     },
     {
       category: 'Sustainability',
@@ -50,9 +49,9 @@ const Blog = () => {
       excerpt: 'Sustainability is no longer optional. Learn about eco-friendly construction practices, renewable materials, and energy-efficient solutions that benefit both the environment and your budget.',
       date: 'Dec 15, 2023',
       author: 'HEGSA Team',
-      image: 'https://plus.unsplash.com/premium_photo-1679607691186-4550451e13b7?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3VzdGFpbmFibGV8ZW58MHx8MHx8fDA%3D'
+      image: 'https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=600&auto=format&fit=crop&q=60'
     }
-  ];
+  ], []);
 
   return (
     <div className="blog-container">
@@ -67,7 +66,12 @@ const Blog = () => {
             <article className="blog-card" key={index}>
               <div className="blog-image">
                 {post.image ? (
-                  <img src={post.image} alt={post.title} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+                  <img 
+                    src={post.image} 
+                    alt={post.title} 
+                    loading="lazy"
+                    style={{width: '100%', height: '100%', objectFit: 'cover'}} 
+                  />
                 ) : (
                   <i className={post.icon}></i>
                 )}
