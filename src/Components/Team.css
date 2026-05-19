@@ -72,7 +72,7 @@
   bottom: -50px;
   left: 0;
   width: 100%;
-  background: rgba(227, 30, 36, 0.9);
+  background: rgba(1, 47, 97, 0.9);
   padding: 15px;
   display: flex;
   justify-content: center;
@@ -106,7 +106,7 @@
 }
 
 .team-info .role {
-  color: #e31e24;
+  color: #07315c;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -117,7 +117,7 @@
 }
 
 .team-info .phone i {
-  color: #e31e24;
+  color: #042062;
   margin-right: 5px;
 }
 
