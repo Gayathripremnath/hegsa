@@ -43,21 +43,45 @@ const Contact = () => {
               </div>
               
               <div className="info-column">
-                <h3>Social Media</h3>
-                <p>Instagram</p>
-                <p>Facebook</p>
+                <h3>Accounts - Praveen</h3>
+                <p><a href="tel:+971568578588">056 857 8588</a></p>
+                <p><a href="mailto:praveen@hegsauae.com">praveen@hegsauae.com</a></p>
               </div>
               
               <div className="info-column">
-                <h3>Email</h3>
-                <p>vipin@hegsauae.com</p>
-                <p>shiva.k@hegsauae.com</p>
+                <h3>Sales - Vineeth</h3>
+                <p><a href="tel:+971547925849">054 792 5849</a></p>
+                <p><a href="mailto:vineeth@hegsauae.com">vineeth@hegsauae.com</a></p>
               </div>
               
               <div className="info-column">
-                <h3>Contact</h3>
-                <p>+971 54 792 7093</p>
-                <p>+971 4 886 8848</p>
+                <h3>Enquiry - Info</h3>
+                <p><a href="mailto:info@hegsauae.com">info@hegsauae.com</a></p>
+                <p><a href="tel:+971549981684">054 998 1684</a></p>
+              </div>
+
+              <div className="info-column">
+                <h3>Vipin Das</h3>
+                <p><a href="tel:+971547927090">+971 54 792 7090</a></p>
+                <p><a href="tel:+971563307606">+971 56 330 7606</a></p>
+              </div>
+              
+              <div className="info-column">
+                <h3>Sivakumar</h3>
+                <p><a href="tel:+971547927093">054 792 7093</a></p>
+                <p><a href="tel:+971504941329">050 494 1329</a></p>
+              </div>
+              
+              <div className="info-column">
+                <h3>Sales Direct</h3>
+                <p><a href="mailto:sales@hegsauae.com">sales@hegsauae.com</a></p>
+                <p><a href="tel:+971547927092">054 792 7092</a></p>
+              </div>
+              
+              <div className="info-column">
+                <h3>Land Line</h3>
+                <p><a href="tel:+97148868848">+971 4 886 8848</a></p>
+                <p><a href="https://www.hegsauae.com">www.hegsauae.com</a></p>
               </div>
             </div>
           </div>

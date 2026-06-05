@@ -81,6 +81,16 @@
   margin: 5px 0;
 }
 
+.info-column a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.info-column a:hover {
+  color: #c0c5da;
+}
+
 /* Right Side - Form Card */
 .contact-right {
   background: white;

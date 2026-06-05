@@ -65,10 +65,10 @@ const chooseItems = [
 ];
 
 const stats = [
-  { value: '200+', label: 'Projects Done', icon: 'fa-trowel-bricks' },
-  { value: '50+', label: 'Expert Team', icon: 'fa-helmet-safety' },
-  { value: '180+', label: 'Happy Clients', icon: 'fa-face-smile' },
-  { value: '25+', label: 'Awards Won', icon: 'fa-trophy' },
+  { value: '20+', label: 'Years Experience', icon: 'fa-calendar-check' },
+  { value: '100+', label: 'Skilled Workers', icon: 'fa-users' },
+  { value: '15+', label: 'Services', icon: 'fa-tools' },
+  { value: '8+', label: 'Cities Covered', icon: 'fa-city' },
 ];
 
 const testimonials = [
