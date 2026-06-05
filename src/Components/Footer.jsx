@@ -40,9 +40,7 @@ const Footer = () => {
 
             <div className="footer-socials">
               <a href="#" aria-label="Facebook"><i className="fa-brands fa-facebook-f"></i></a>
-              <a href="#" aria-label="Twitter"><i className="fa-brands fa-x-twitter"></i></a>
               <a href="#" aria-label="Instagram"><i className="fa-brands fa-instagram"></i></a>
-              <a href="#" aria-label="LinkedIn"><i className="fa-brands fa-linkedin-in"></i></a>
             </div>
           </div>
 
@@ -74,13 +72,56 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="footer-subscribe-col">
-            <h4>INQUIRY</h4>
-            <div className="contact-info">
-              <p><strong>Sivakumar:</strong><br /> +971 54 792 7093 / +971 50 494 1329</p>
-              <p><strong>Vipin Das:</strong><br /> +971 54 792 7090</p>
-              <p><strong>Land Line:</strong><br /> +971 4 886 8848</p>
-              <p><strong>Website:</strong><br /> www.hegsauae.com</p>
+          <div className="footer-links-col">
+            <h4>ENQUIRY</h4>
+            <div className="enquiry-grid">
+              <div className="enquiry-row">
+                <div className="enquiry-item">
+                  <p className="enquiry-title">Vipin Das</p>
+                  <p><a href="tel:+971547927090">+971 54 792 7090</a></p>
+                </div>
+                <div className="enquiry-item">
+                  <p className="enquiry-title">Sivakumar</p>
+                  <p><a href="tel:+971547927093">054 792 7093</a></p>
+                  <p><a href="tel:+971504941329">050 494 1329</a></p>
+                </div>
+                <div className="enquiry-item">
+                  <p className="enquiry-title">Land Line</p>
+                  <p><a href="tel:+97148868848">+971 4 886 8848</a></p>
+                </div>
+              </div>
+              <div className="enquiry-row">
+                <div className="enquiry-item">
+                  <p className="enquiry-title">Accounts - Praveen</p>
+                  <p><a href="tel:+971568578588">056 857 8588</a></p>
+                  <p><a href="mailto:praveen@hegsauae.com">praveen@hegsauae.com</a></p>
+                </div>
+                <div className="enquiry-item">
+                  <p className="enquiry-title">Sales - Vineeth</p>
+                  <p><a href="tel:+971547925849">054 792 5849</a></p>
+                  <p><a href="mailto:vineeth@hegsauae.com">vineeth@hegsauae.com</a></p>
+                </div>
+                <div className="enquiry-item">
+                  <p className="enquiry-title">Enquiry - Info</p>
+                  <p><a href="mailto:info@hegsauae.com">info@hegsauae.com</a></p>
+                  <p><a href="tel:+971549981684">054 998 1684</a></p>
+                </div>
+              </div>
+              <div className="enquiry-row">
+                <div className="enquiry-item">
+                  <p className="enquiry-title">Sales Direct</p>
+                  <p><a href="mailto:sales@hegsauae.com">sales@hegsauae.com</a></p>
+                  <p><a href="tel:+971547927092">054 792 7092</a></p>
+                </div>
+                <div className="enquiry-item">
+                  <p className="enquiry-title">Vipin Das</p>
+                  <p><a href="tel:+971563307606">+971 56 330 7606</a></p>
+                </div>
+                <div className="enquiry-item">
+                  <p className="enquiry-title">Website</p>
+                  <p><a href="https://www.hegsauae.com">www.hegsauae.com</a></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

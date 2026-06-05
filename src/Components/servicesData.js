@@ -138,7 +138,7 @@ export const servicesList = [
       'Highest Unrestricted Electrical License.',
       'Ability to handle any and all electrical needs.'
     ],
-    image: 'https://plus.unsplash.com/premium_photo-1661908782924-de673a5c6988?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8RUxFQ1RSSUNBTCUyMCUyNiUyMExJR0hUSU5HJTIwU09MVVRJT05TfGVufDB8fDB8fHww'
+    image: 'https://images.unsplash.com/photo-1615774925655-a0e97fc85c14?&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fEVMRUNUUklDQUwlMjAlMjYlMjBMSUdIVElORyUyMFNPTFVUSU9OU3xlbnwwfHwwfHx8MA%3D%3D'
   },
   {
     id: 'false-ceiling',
@@ -150,7 +150,7 @@ export const servicesList = [
       'Gypsum drywall partition',
       'Aluminum false ceiling'
     ],
-    image: 'https://plus.unsplash.com/premium_photo-1704988993814-a9dac402315b?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8RkFMU0UlMjBDRUlMSU5HJTIwJTI2JTIwTElHSFQlMjBQQVJUSVRJT04lMjBXT1JLU3xlbnwwfHwwfHx8MA%3D%3D'
+    image: 'https://images.unsplash.com/photo-1621754304921-09120a6b81c5?&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fEZBTFNFJTIwQ0VJTElORyUyMCUyNiUyMExJR0hUJTIwUEFSVElUSU9OJTIwV09SS1N8ZW58MHx8MHx8fDA%3D'
   },
   {
     id: 'fencing-handrail',
@@ -161,6 +161,6 @@ export const servicesList = [
       'Dedicated team offers quality works inside UAE, meeting all safety standards.',
       'One of the most trusted aluminum cladding providers in the UAE.'
     ],
-    image: 'https://plus.unsplash.com/premium_photo-1753089575089-7cf2a4e8f54f?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8RkVOQ0lORyUyMCUyNiUyMEhBTkRSQUlMJTIwV09SS3xlbnwwfHwwfHx8MA%3D%3D'
+    image: 'https://images.unsplash.com/photo-1614688565801-55119db6cdf2?&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8RkVOQ0lORyUyMCUyNiUyMEhBTkRSQUlMJTIwV09SS3xlbnwwfHwwfHx8MA%3D%3D'
   }
 ];

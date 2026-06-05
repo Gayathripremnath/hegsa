@@ -38,21 +38,20 @@ const Contact = () => {
               <div className="info-column">
                 <h3>Location</h3>
                 <p>Dubai, Sharjah & Across UAE</p>
-                <p>Monday-Sunday | 08:00 - 22:00</p>
+                <p>Monday-Saturday | 08:00 - 22:00</p>
                 <p>(local time)</p>
               </div>
               
               <div className="info-column">
                 <h3>Social Media</h3>
                 <p>Instagram</p>
-                <p>LinkedIn</p>
                 <p>Facebook</p>
               </div>
               
               <div className="info-column">
                 <h3>Email</h3>
-                <p>shiva.k@hegsauae.com</p>
                 <p>vipin@hegsauae.com</p>
+                <p>shiva.k@hegsauae.com</p>
               </div>
               
               <div className="info-column">

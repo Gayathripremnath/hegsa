@@ -65,10 +65,10 @@ const chooseItems = [
 ];
 
 const stats = [
-  { value: '2.2k+', label: 'Project Completed', icon: 'fa-trowel-bricks' },
-  { value: '3.1k+', label: 'Team Members', icon: 'fa-helmet-safety' },
-  { value: '1.9k+', label: 'Clients Are Happy', icon: 'fa-face-smile' },
-  { value: '1.1k+', label: 'Award Wins', icon: 'fa-trophy' },
+  { value: '200+', label: 'Projects Done', icon: 'fa-trowel-bricks' },
+  { value: '50+', label: 'Expert Team', icon: 'fa-helmet-safety' },
+  { value: '180+', label: 'Happy Clients', icon: 'fa-face-smile' },
+  { value: '25+', label: 'Awards Won', icon: 'fa-trophy' },
 ];
 
 const testimonials = [
@@ -388,6 +388,11 @@ const AboutSection = () => {
                 </div>
               </article>
             ))}
+            <div className="stats-cta">
+              <Link to="/contact" className="stats-btn">
+                Get Quote <i className="fa-solid fa-arrow-right"></i>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
