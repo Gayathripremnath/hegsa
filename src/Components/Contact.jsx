@@ -38,7 +38,7 @@ const Contact = () => {
               <div className="info-column">
                 <h3>Location</h3>
                 <p>Dubai, Sharjah & Across UAE</p>
-                <p>Monday-Saturday | 08:00 - 22:00</p>
+                <p>Monday-Saturday | 08:00 - 05:00</p>
                 <p>(local time)</p>
               </div>
               
@@ -82,6 +82,14 @@ const Contact = () => {
                 <h3>Land Line</h3>
                 <p><a href="tel:+97148868848">+971 4 886 8848</a></p>
                 <p><a href="https://www.hegsauae.com">www.hegsauae.com</a></p>
+              </div>
+
+              <div className="info-column social-column">
+                <h3>Follow Us</h3>
+                <div className="social-icons">
+                  <a href="#" className="social-link"><i className="fa-brands fa-instagram"></i></a>
+                  <a href="#" className="social-link"><i className="fa-brands fa-facebook-f"></i></a>
+                </div>
               </div>
             </div>
           </div>

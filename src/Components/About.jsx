@@ -383,7 +383,7 @@ const AboutSection = () => {
       <section className="testimonials-section">
         <div className="testimonials-wrap">
           <p className="testimonials-kicker">TESTIMONIALS</p>
-          <h2 className="testimonials-title">What Our Client Say?</h2>
+          <h2 className="testimonials-title"> Our Major Clients</h2>
           <p className="testimonials-sub">
             Subscribe Easy Tutorials YouTube channel to watch more videos.
           </p>
@@ -391,7 +391,9 @@ const AboutSection = () => {
           <div className="testimonials-grid">
             {testimonials.map((item) => (
               <article key={item.name} className="testimonial-card">
-                <img src={item.avatar} alt={item.name} className="testimonial-avatar" />
+                <div className="testimonial-icon">
+                  <i className="fa-solid fa-user"></i>
+                </div>
                 <p className="testimonial-text">
                   <i className="fa-solid fa-quote-left"></i>
                   {item.text}

@@ -40,7 +40,6 @@ const Team = () => {
                 <div className="team-image">
                   <img src={member.image} alt={member.name} />
                   <div className="team-socials">
-                    <a href="#"><i className="fa-brands fa-linkedin"></i></a>
                     <a href="#"><i className="fa-brands fa-whatsapp"></i></a>
                   </div>
                 </div>
