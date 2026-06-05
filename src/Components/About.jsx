@@ -376,24 +376,7 @@ const AboutSection = () => {
             </div>
           </div>
 
-          <div className="choose-stats">
-            {stats.map((item) => (
-              <article key={item.label} className="choose-stat">
-                <div className="choose-stat-icon">
-                  <i className={`fa-solid ${item.icon}`}></i>
-                </div>
-                <div>
-                  <p className="choose-stat-value">{item.value}</p>
-                  <p className="choose-stat-label">{item.label}</p>
-                </div>
-              </article>
-            ))}
-            <div className="stats-cta">
-              <Link to="/contact" className="stats-btn">
-                Get Quote <i className="fa-solid fa-arrow-right"></i>
-              </Link>
-            </div>
-          </div>
+
         </div>
       </section>
 
