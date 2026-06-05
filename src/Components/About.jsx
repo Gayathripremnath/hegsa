@@ -421,10 +421,7 @@ const AboutSection = () => {
                 <div className="blog-body">
                   <div className="blog-meta">
                     <span className="blog-author">
-                      <img
-                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80"
-                        alt={item.author}
-                      />
+                      <i className="fa-solid fa-user"></i>
                       {item.author}
                     </span>
                     <span className="blog-date">

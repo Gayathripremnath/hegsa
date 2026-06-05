@@ -1254,11 +1254,15 @@
   gap: 8px;
 }
 
-.blog-author img {
+.blog-author i {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  object-fit: cover;
+  background: #0b1026;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 0.9rem;
 }
 
 .blog-date {
