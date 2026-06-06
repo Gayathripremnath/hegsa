@@ -41,11 +41,24 @@ const Contact = () => {
                 <p>Monday-Saturday | 08:00 - 05:00</p>
                 <p>(local time)</p>
               </div>
+                   <div className="info-column">
+                <h3>Operation Manager - Vipin Das</h3>
+                <p><a href="tel:+971547927090">+971 54 792 7090</a></p>
+                <p><a href="tel:+971563307606">+971 56 330 7606</a></p>
+              </div>
               
-              <div className="info-column">
-                <h3>Accounts - Praveen</h3>
-                <p><a href="tel:+971568578588">056 857 8588</a></p>
-                <p><a href="mailto:praveen@hegsauae.com">praveen@hegsauae.com</a></p>
+            <div className="info-column">
+                <h3>Enquiry - Info</h3>
+                <p><a href="mailto:info@hegsauae.com">info@hegsauae.com</a></p>
+                <p><a href="tel:+971549981684">054 998 1684</a></p>
+              </div>
+
+         
+            
+                  <div className="info-column">
+                <h3>Project Manager - Sivakumar</h3>
+                <p><a href="tel:+971547927093">054 792 7093</a></p>
+                <p><a href="tel:+971504941329">050 494 1329</a></p>
               </div>
               
               <div className="info-column">
@@ -54,24 +67,12 @@ const Contact = () => {
                 <p><a href="mailto:vineeth@hegsauae.com">vineeth@hegsauae.com</a></p>
               </div>
               
-              <div className="info-column">
-                <h3>Enquiry - Info</h3>
-                <p><a href="mailto:info@hegsauae.com">info@hegsauae.com</a></p>
-                <p><a href="tel:+971549981684">054 998 1684</a></p>
+            
+                <div className="info-column">
+                <h3>Accounts - Praveen</h3>
+                <p><a href="tel:+971568578588">056 857 8588</a></p>
+                <p><a href="mailto:praveen@hegsauae.com">praveen@hegsauae.com</a></p>
               </div>
-
-              <div className="info-column">
-                <h3>Vipin Das</h3>
-                <p><a href="tel:+971547927090">+971 54 792 7090</a></p>
-                <p><a href="tel:+971563307606">+971 56 330 7606</a></p>
-              </div>
-              
-              <div className="info-column">
-                <h3>Sivakumar</h3>
-                <p><a href="tel:+971547927093">054 792 7093</a></p>
-                <p><a href="tel:+971504941329">050 494 1329</a></p>
-              </div>
-              
               <div className="info-column">
                 <h3>Sales Direct</h3>
                 <p><a href="mailto:sales@hegsauae.com">sales@hegsauae.com</a></p>

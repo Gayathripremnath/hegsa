@@ -71,28 +71,30 @@ const stats = [
   { value: '8+', label: 'Cities Covered', icon: 'fa-city' },
 ];
 
-const testimonials = [
-  {
-    name: 'Avinash Kr',
-    role: 'Co Founder at xyz',
-    avatar:
-      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=240&q=80',
-    text: 'Like this video and ask your questions in comment section, do not forget to subscribe.',
-  },
-  {
-    name: 'Bharat Kunal',
-    role: 'Manager at xyz',
-    avatar:
-      'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=240&q=80',
-    text: 'Easy Tutorials YouTube channel to watch more videos of website designing and photoshop.',
-  },
-  {
-    name: 'Prabhakar D',
-    role: 'CEO at xyz',
-    avatar:
-      'https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=240&q=80',
-    text: 'Like this video and ask your questions in comment section, do not forget to subscribe.',
-  },
+const clients = [
+  // ROW 1
+  { logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPpbwW4htSdc9tcZzYiaGI2A-2MVS55qREeQ&s", name: "Sairam Spinning Mills" },
+  { logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Indian_Space_Research_Organisation_Logo.svg/1280px-Indian_Space_Research_Organisation_Logo.svg.png", name: "ISRO" },
+  { logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMoTE457XcJWQxvewy_izZi0m7r4BU3ndpLw&s", name: "Central Bank" },
+  { logo: "https://media.licdn.com/dms/image/v2/D560BAQGsZe-U_qSYyA/company-logo_200_200/company-logo_200_200/0/1703752441790/wheels_india_limited_logo?e=2147483647&v=beta&t=T3KngiqHGHBuQlZI8jaBdkbqfwXP5148nX6UlYCEhv8", name: "Wheels India" },
+  { logo: "https://images.seeklogo.com/logo-png/39/1/eureka-forbes-logo-png_seeklogo-398420.png", name: "Eureka Forbes" },
+  { logo: "https://images.seeklogo.com/logo-png/28/1/ashok-leyland-logo-png_seeklogo-288835.png", name: "Ashok Leyland" },
+
+  // ROW 2
+  { logo: "https://i.pinimg.com/736x/0e/69/3f/0e693f68feea0c901f30a11fb6fb8b13.jpg", name: "Royal Enfield" },
+  { logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Valeo_Logo.svg/3840px-Valeo_Logo.svg.png", name: "valeo" },
+  { logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWdO1MqcX3e3fqq9QFNXkAlhc1vPu0zFxUkg&s", name: "TVS Motor" },
+  { logo: "https://i.pinimg.com/736x/53/a7/fb/53a7fbb84490a22043c5c8cbbd57e786.jpg", name: "Mahindra" },
+
+  // ROW 3
+  { logo: "https://i.pinimg.com/736x/0e/69/3f/0e693f68feea0c901f30a11fb6fb8b13.jpg", name: "Royal Enfield" },
+  { logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Valeo_Logo.svg/3840px-Valeo_Logo.svg.png", name: "valeo" },
+  { logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWdO1MqcX3e3fqq9QFNXkAlhc1vPu0zFxUkg&s", name: "TVS Motor" },
+  { logo: "https://i.pinimg.com/736x/53/a7/fb/53a7fbb84490a22043c5c8cbbd57e786.jpg", name: "Mahindra" },
+   { logo: "https://i.pinimg.com/736x/0e/69/3f/0e693f68feea0c901f30a11fb6fb8b13.jpg", name: "Royal Enfield" },
+  { logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Valeo_Logo.svg/3840px-Valeo_Logo.svg.png", name: "valeo" },
+  { logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWdO1MqcX3e3fqq9QFNXkAlhc1vPu0zFxUkg&s", name: "TVS Motor" },
+  { logo: "https://i.pinimg.com/736x/53/a7/fb/53a7fbb84490a22043c5c8cbbd57e786.jpg", name: "Mahindra" },
 ];
 
 const blogs = [
@@ -380,31 +382,39 @@ const AboutSection = () => {
         </div>
       </section>
 
-      <section className="testimonials-section">
-        <div className="testimonials-wrap">
-          <p className="testimonials-kicker">TESTIMONIALS</p>
-          <h2 className="testimonials-title"> Our Major Clients</h2>
-          <p className="testimonials-sub">
-            Subscribe Easy Tutorials YouTube channel to watch more videos.
-          </p>
+      <section className="clients-section">
+      <div className="clients-wrap">
+        <p className="clients-kicker">OUR CLIENTS</p>
 
-          <div className="testimonials-grid">
-            {testimonials.map((item) => (
-              <article key={item.name} className="testimonial-card">
-                <div className="testimonial-icon">
-                  <i className="fa-solid fa-user"></i>
-                </div>
-                <p className="testimonial-text">
-                  <i className="fa-solid fa-quote-left"></i>
-                  {item.text}
-                </p>
-                <h3 className="testimonial-name">{item.name}</h3>
-                <p className="testimonial-role">{item.role}</p>
-              </article>
-            ))}
-          </div>
+        <h2 className="clients-title">
+          Our Major Clients
+        </h2>
+
+        {/* The tight grid structure of the image */}
+        <div className="clients-grid">
+          {clients.map((client, index) => (
+            <div key={index} className="client-card">
+              {/* Optional: Add text fallback if img link is empty for testing */}
+              {client.logo ? (
+                <img
+                  src={client.logo}
+                  alt={client.name}
+                  className="client-logo"
+                  onError={(e) => {
+                    // Fallback to text if img link is broken
+                    e.target.style.display = 'none';
+                    e.target.nextElementSibling.style.display = 'block'; 
+                    e.target.nextElementSibling.classList.add('logo-text-fallback');
+                  }}
+                />
+              ) : null}
+              {/* This name tag is for accessibility and layout, hidden via CSS like image_0.png */}
+              <p className="client-name">{client.name}</p>
+            </div>
+          ))}
         </div>
-      </section>
+      </div>
+    </section>
 
       <section className="blog-section">
         <div className="blog-wrap">

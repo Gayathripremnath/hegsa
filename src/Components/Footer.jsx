@@ -77,11 +77,11 @@ const Footer = () => {
             <div className="enquiry-grid">
               <div className="enquiry-row">
                 <div className="enquiry-item">
-                  <p className="enquiry-title">Vipin Das</p>
-                  <p><a href="tel:+971547927090">+971 54 792 7090</a></p>
+                  <p className="enquiry-title">Operation Manager - Vipin Das</p>
+                  <p><a href="tel:+971547927090">+971 56 330 7606</a></p>
                 </div>
                 <div className="enquiry-item">
-                  <p className="enquiry-title">Sivakumar</p>
+                  <p className="enquiry-title">Project Manager - Sivakumar</p>
                   <p><a href="tel:+971547927093">054 792 7093</a></p>
                   <p><a href="tel:+971504941329">050 494 1329</a></p>
                 </div>
@@ -113,10 +113,7 @@ const Footer = () => {
                   <p><a href="mailto:sales@hegsauae.com">sales@hegsauae.com</a></p>
                   <p><a href="tel:+971547927092">054 792 7092</a></p>
                 </div>
-                <div className="enquiry-item">
-                  <p className="enquiry-title">Vipin Das</p>
-                  <p><a href="tel:+971563307606">+971 56 330 7606</a></p>
-                </div>
+              
                 <div className="enquiry-item">
                   <p className="enquiry-title">Website</p>
                   <p><a href="https://www.hegsauae.com">www.hegsauae.com</a></p>
