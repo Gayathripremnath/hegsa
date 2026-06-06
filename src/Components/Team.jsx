@@ -60,7 +60,7 @@ const Team = () => {
           <div className="join-card">
             <h2>Work With Us</h2>
             <p>We are always looking for talented professionals to join our growing team.</p>
-            <button className="btn-orange">SEND YOUR CV →</button>
+            <button className="btn-orange">Contact Us→</button>
           </div>
         </div>
       </section>
