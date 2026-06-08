@@ -21,40 +21,41 @@ import imgc16 from '../assets/imgc16.jpeg';
 
 const services = [
   {
-    title: 'Joinery work',
-    desc: 'Specializing in custom wood craftsmanship to bring your vision to life. Our Capabilities Includes',
-    icon: 'fa-lightbulb',
-    image:  
-      'https://images.unsplash.com/photo-1705760058049-b58119c416a9?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fEpPSU5FUlklMjBXT1JLU3xlbnwwfHwwfHx8MA%3D%3D',
-  },
-  {
-    title: 'Wooden polishing work',
-    desc: 'We offer professional wooden polishing services.',
-    icon: 'fa-screwdriver-wrench',
-    image:
-      'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80',
-  },
-  {
     title: 'Aluminium & Glass work',
     desc: 'We are the specialists in providing a comprehensive.',
     icon: 'fa-compass-drafting',
     image:
       'https://images.unsplash.com/photo-1723051390199-ea18f291141e?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fEFMVU1JTklVTSUyMCUyNiUyMEdMQVNTJTIwV09SS3xlbnwwfHwwfHx8MA%3D%3D',
   },
-  {
-    title: 'Building & Engineering',
-    desc: 'Notalianops engage the resource maximizing process geneticalions.',
+    {
+    title: 'Aluminium curtain wall',
+    desc: 'Hegsa curtain wall systems enhance comfort and efficiency.',
     icon: 'fa-gears',
     image:
       'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80',
   },
   {
-    title: 'Building Construction',
-    desc: 'Intrinsically engage the resource maximizing process improvements.',
-    icon: 'fa-house',
+    title: 'Aluminium Doors&windows',
+    desc: 'We offer professional aluminium doors and windows services.',
+    icon: 'fa-screwdriver-wrench',
     image:
-      'https://images.unsplash.com/photo-1590650046871-92c887180603?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1684831652465-9e523949eef2?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fEFMVU1JTklVTSUyMERPT1JTJTIwJTI2JTIwV0lORE9XU3xlbnwwfHwwfHx8MA%3D%3D ',
   },
+   {
+    title: 'fencing & handrail work  ',
+    desc: 'High-quality fencing and handrail systems designed for safety, strength, and modern appeal.',
+    icon: 'fa-gears',
+    image:
+      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80',
+  },
+    {
+    title: 'Joinery work',
+    desc: 'Specializing in custom wood craftsmanship to bring your vision to life. Our Capabilities Includes',
+    icon: 'fa-lightbulb',
+    image:  
+      'https://images.unsplash.com/photo-1705760058049-b58119c416a9?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fEpPSU5FUlklMjBXT1JLU3xlbnwwfHwwfHx8MA%3D%3D',
+  },
+
 ];
 
 const chooseItems = [
