@@ -290,7 +290,7 @@ const AboutSection = () => {
               </span>
               <div className="process-circle">
                 <h3>Planning</h3>
-                <p>Uniquely orchestrate seamless potentialities via real-time.</p>
+                <p>Strategically align possibilities via real-time tracking.</p>
               </div>
             </article>
 
@@ -304,7 +304,7 @@ const AboutSection = () => {
               </span>
               <div className="process-circle">
                 <h3>Design</h3>
-                <p>Matonsia orchestrate seamless potentialities via real-goal.</p>
+                <p>Purposefully structure detailed layouts via real-world goals..</p>
               </div>
             </article>
 
@@ -318,7 +318,7 @@ const AboutSection = () => {
               </span>
               <div className="process-circle">
                 <h3>Construct</h3>
-                <p>Kotalian orchestrate seamless potentialities via real-mean.</p>
+                <p>"Robust and meaningful execution to bring plans to life."</p>
               </div>
             </article>
 
@@ -332,7 +332,7 @@ const AboutSection = () => {
               </span>
               <div className="process-circle">
                 <h3>Finishing</h3>
-                <p>Barriaen orchestrate seamless potentialities via real-toan.</p>
+                <p>"Immaculate final touches and a flawless handover.".</p>
               </div>
             </article>
           </div>
