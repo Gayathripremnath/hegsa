@@ -1,25 +1,26 @@
 import React from 'react';
 import './Team.css';
+import user from '../assets/user icon.png';
 
 const teamMembers = [
     {
     name: 'Vipin Das',
     role: 'Operation Manager',
     phone: '+971 54 792 7090',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070'
+    image: user,
   },
   {
     name: 'Sivakumar',
     role: 'Project Manager / Primary Inquiry',
     phone: '+971 54 792 7093 / +971 50 494 1329',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974'
+    image: user,
   },
 
   {
     name: 'Expert Engineering Team',
     role: 'Technical Support',
     phone: '+971 4 886 8848',
-    image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070'
+    image: user
   }
 ];
 
