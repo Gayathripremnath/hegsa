@@ -33,47 +33,8 @@ export const servicesList = [
     ],
     image: 'https://images.unsplash.com/photo-1684831652465-9e523949eef2?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fEFMVU1JTklVTSUyMERPT1JTJTIwJTI2JTIwV0lORE9XU3xlbnwwfHwwfHx8MA%3D%3D '
   },
-  {
-    id: 'joinery',
-    title: 'JOINERY WORKS',
-    desc: 'Our company offers high-quality joinery services, tailored to meet the unique requirements of each project. With a skilled team of craftsmen and state-of-the-art equipment, we specialize in delivering precise, durable, and aesthetically pleasing woodwork solutions across various sectors.',
-    details: [],
-    detailedList: [
-      { title: 'Custom Furniture Manufacturing', desc: 'Design and fabrication of bespoke furniture for residential, commercial, and hospitality projects.' },
-      { title: 'Wooden Doors and Frames', desc: 'Production and installation of solid wood, veneer-finished, and fire-rated doors with matching frames.' },
-      { title: 'Wardrobes and Cabinets', desc: 'Tailored storage solutions with high-quality finishes, built to optimize space and functionality.' },
-      { title: 'Wall Cladding and Paneling', desc: 'Decorative and protective wooden paneling for interior walls, enhancing the visual appeal of any space.' },
-      { title: 'Reception Counters and Office Fit-Outs', desc: 'Custom-designed counters, desks, shelving, and partition systems to suit modern office environments.' },
-      { title: 'Kitchen Units and Vanities', desc: 'Functional and elegant kitchen cabinets, countertops, and vanity units crafted to client specifications.' },
-      { title: 'Pergolas and Wooden Structures', desc: 'Fabrication and installation of outdoor wooden structures such as pergolas, gazebos, and decking.' }
-    ],
-    image: 'https://images.unsplash.com/photo-1705760058049-b58119c416a9?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fEpPSU5FUlklMjBXT1JLU3xlbnwwfHwwfHx8MA%3D%3D'
-  },
-  {
-    id: 'wooden-polishing',
-    title: 'WOODEN POLISHING WORKS',
-    desc: 'We offer professional wooden polishing services that enhance the natural beauty, durability, and finish of wood surfaces. With an experienced team and attention to fine detail, we ensure that all wooden elements – whether new installations or restorations – receive a high-quality finish that meets both aesthetic and functional standards.',
-    details: [],
-    detailedListTitle: 'Our Polishing Services Include:',
-    detailedList: [
-      { title: 'Wood Surface Preparation', desc: 'Sanding, cleaning, and priming wooden surfaces to ensure smooth and even application of polish.' },
-      { title: 'Staining and Coloring', desc: 'Custom stains and tints to match design preferences, enhance wood grain, or blend with existing interiors.' },
-      { title: 'PU (Polyurethane) Polish', desc: 'Durable and high-gloss, semi-gloss, or matte finishes for long-lasting protection and a premium look.' },
-      { title: 'Melamine & NC Polish', desc: 'Quick-drying finishes with resistance to heat, water, and wear — ideal for furniture and interior joinery.' },
-      { title: 'Wax and Oil Finishes', desc: 'Eco-friendly, natural-looking polish options for a classic or rustic aesthetic.' },
-      { title: 'Refinishing and Restoration', desc: 'Reviving old or damaged woodwork to restore its original charm and extend its lifespan.' }
-    ],
-    applications: [
-      'Custom Furniture',
-      'Doors & Door Frames',
-      'Wooden Paneling & Cladding',
-      'Handrails & Staircases',
-      'Cabinetry and Wardrobes',
-      'Office and Retail Fit-outs'
-    ],
-    applicationsDesc: 'We are committed to excellence in every detail, ensuring our joinery works add long-lasting value and elegance to every project.',
-    image: 'https://images.unsplash.com/photo-1590529989936-f6efdf774c23?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8V09PREVOJTIwUE9MSVNISU5HJTIwV09SS1N8ZW58MHx8MHx8fDA%3D'
-  },
+  
+  
   {
     id: 'marble',
     title: 'MARBLE, GRANITE & TILE WORKS',
@@ -84,6 +45,17 @@ export const servicesList = [
       'Superior customer service.'
     ],
     image: 'https://images.unsplash.com/photo-1622694546886-52e507b05507?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fE1BUkJMRSUyQyUyMEdSQU5JVEUlMjAlMjYlMjBUSUxFJTIwV09SS1N8ZW58MHx8MHx8fDA%3D'
+  },
+  {
+    id: 'fencing-handrail',
+    title: 'FENCING & HANDRAIL WORK',
+    desc: 'Hegsa is a Dubai-based company that specializes in providing modern and traditionally mashrabiya PERGOLA designs. We use only the best aluminum and glass material that is sustainable, ensuring our clients get the best quality products. Our pergola works are available in Dubai, Sharjah, and across the UAE.',
+    details: [
+      'Hegsa Aluminum cladding is the perfect choice for buildings with contemporary designs. It is lightweight yet strong.',
+      'Dedicated team offers quality works inside UAE, meeting all safety standards.',
+      'One of the most trusted aluminum cladding providers in the UAE.'
+    ],
+    image: 'https://images.unsplash.com/photo-1614688565801-55119db6cdf2?&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8RkVOQ0lORyUyMCUyNiUyMEhBTkRSQUlMJTIwV09SS3xlbnwwfHwwfHx8MA%3D%3D'
   },
   {
     id: 'painting',
@@ -152,15 +124,46 @@ export const servicesList = [
     ],
     image: 'https://images.unsplash.com/photo-1621754304921-09120a6b81c5?&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fEZBTFNFJTIwQ0VJTElORyUyMCUyNiUyMExJR0hUJTIwUEFSVElUSU9OJTIwV09SS1N8ZW58MHx8MHx8fDA%3D'
   },
+  
   {
-    id: 'fencing-handrail',
-    title: 'FENCING & HANDRAIL WORK',
-    desc: 'Hegsa is a Dubai-based company that specializes in providing modern and traditionally mashrabiya PERGOLA designs. We use only the best aluminum and glass material that is sustainable, ensuring our clients get the best quality products. Our pergola works are available in Dubai, Sharjah, and across the UAE.',
-    details: [
-      'Hegsa Aluminum cladding is the perfect choice for buildings with contemporary designs. It is lightweight yet strong.',
-      'Dedicated team offers quality works inside UAE, meeting all safety standards.',
-      'One of the most trusted aluminum cladding providers in the UAE.'
+    id: 'joinery',
+    title: 'JOINERY WORKS',
+    desc: 'Our company offers high-quality joinery services, tailored to meet the unique requirements of each project. With a skilled team of craftsmen and state-of-the-art equipment, we specialize in delivering precise, durable, and aesthetically pleasing woodwork solutions across various sectors.',
+    details: [],
+    detailedList: [
+      { title: 'Custom Furniture Manufacturing', desc: 'Design and fabrication of bespoke furniture for residential, commercial, and hospitality projects.' },
+      { title: 'Wooden Doors and Frames', desc: 'Production and installation of solid wood, veneer-finished, and fire-rated doors with matching frames.' },
+      { title: 'Wardrobes and Cabinets', desc: 'Tailored storage solutions with high-quality finishes, built to optimize space and functionality.' },
+      { title: 'Wall Cladding and Paneling', desc: 'Decorative and protective wooden paneling for interior walls, enhancing the visual appeal of any space.' },
+      { title: 'Reception Counters and Office Fit-Outs', desc: 'Custom-designed counters, desks, shelving, and partition systems to suit modern office environments.' },
+      { title: 'Kitchen Units and Vanities', desc: 'Functional and elegant kitchen cabinets, countertops, and vanity units crafted to client specifications.' },
+      { title: 'Pergolas and Wooden Structures', desc: 'Fabrication and installation of outdoor wooden structures such as pergolas, gazebos, and decking.' }
     ],
-    image: 'https://images.unsplash.com/photo-1614688565801-55119db6cdf2?&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8RkVOQ0lORyUyMCUyNiUyMEhBTkRSQUlMJTIwV09SS3xlbnwwfHwwfHx8MA%3D%3D'
-  }
+    image: 'https://images.unsplash.com/photo-1705760058049-b58119c416a9?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fEpPSU5FUlklMjBXT1JLU3xlbnwwfHwwfHx8MA%3D%3D'
+  },
+  {
+    id: 'wooden-polishing',
+    title: 'WOODEN POLISHING WORKS',
+    desc: 'We offer professional wooden polishing services that enhance the natural beauty, durability, and finish of wood surfaces. With an experienced team and attention to fine detail, we ensure that all wooden elements – whether new installations or restorations – receive a high-quality finish that meets both aesthetic and functional standards.',
+    details: [],
+    detailedListTitle: 'Our Polishing Services Include:',
+    detailedList: [
+      { title: 'Wood Surface Preparation', desc: 'Sanding, cleaning, and priming wooden surfaces to ensure smooth and even application of polish.' },
+      { title: 'Staining and Coloring', desc: 'Custom stains and tints to match design preferences, enhance wood grain, or blend with existing interiors.' },
+      { title: 'PU (Polyurethane) Polish', desc: 'Durable and high-gloss, semi-gloss, or matte finishes for long-lasting protection and a premium look.' },
+      { title: 'Melamine & NC Polish', desc: 'Quick-drying finishes with resistance to heat, water, and wear — ideal for furniture and interior joinery.' },
+      { title: 'Wax and Oil Finishes', desc: 'Eco-friendly, natural-looking polish options for a classic or rustic aesthetic.' },
+      { title: 'Refinishing and Restoration', desc: 'Reviving old or damaged woodwork to restore its original charm and extend its lifespan.' }
+    ],
+    applications: [
+      'Custom Furniture',
+      'Doors & Door Frames',
+      'Wooden Paneling & Cladding',
+      'Handrails & Staircases',
+      'Cabinetry and Wardrobes',
+      'Office and Retail Fit-outs'
+    ],
+    applicationsDesc: 'We are committed to excellence in every detail, ensuring our joinery works add long-lasting value and elegance to every project.',
+    image: 'https://images.unsplash.com/photo-1590529989936-f6efdf774c23?auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8V09PREVOJTIwUE9MSVNISU5HJTIwV09SS1N8ZW58MHx8MHx8fDA%3D'
+  },
 ];
