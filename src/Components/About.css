@@ -1069,20 +1069,17 @@
   color: #222;
   text-transform: capitalize;
 }
-
-/* Define a strict 6-column grid to replicate the layout of image_0.png */
+/* Base Styles: Mobile First (Phones & small devices) */
 .clients-grid {
   display: grid;
-  grid-template-columns: repeat(7, 1fr); /* 6 equal columns */
+  /* 2 columns on small mobile screens */
+  grid-template-columns: repeat(2, 1fr); 
   
-  /* Critical: tight grid, small gap, and alignment */
-  gap: 10px 2px; /* Vert gap | Hor gap, very minimal */
-  align-items: end; /* Many logos are aligned along the baseline */
-  
-  /* Prevent the grid from taking up the entire screen width */
+  gap: 15px 10px; /* Slightly more horizontal gap for mobile readability */
+  align-items: center; /* Center alignment looks cleaner when grid stacks */
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 20px; /* Reduced padding for mobile screens */
 }
 
 /* The card container for each logo */
@@ -1091,25 +1088,57 @@
   padding: 7px; 
   border: none; 
   border-radius: 0;
-  
-  
   transition: none; 
   transform: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* The actual logo image */
 .client-logo {
-  width: 127px; /* Fill the container horizontally */
-  
-  /* Strict height to force alignment, using min-height helps prevent collapses */
-  height: 75px; /* Forcing standard height for grid consistency */
-  min-height: 50px;
-  
-  object-fit: contain; /* Ensure full logo is visible without cropping */
-  filter: none; /* Keep logos colored; some logos in the image are blue/colored */
-  opacity: 0.9; /* Slight reduction for softer presentation like the image */
+  width: 100%; /* Let the grid item define the width dynamically */
+  max-width: 127px; /* Prevents logos from stretching too large on wider screens */
+  height: 60px; /* Slightly smaller height baseline for mobile */
+  object-fit: contain; 
+  filter: none; 
+  opacity: 0.9; 
 }
 
+@media (min-width: 576px) {
+  .clients-grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 30px;
+  }
+  .client-logo {
+    height: 65px;
+  }
+}
+
+/* Tablets (Landscape) / Small Laptops - 768px and up */
+@media (min-width: 768px) {
+  .clients-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px 6px;
+  }
+  .client-logo {
+    height: 70px;
+  }
+}
+
+/* Desktops / Large Screens - 992px and up (Matches your original design) */
+@media (min-width: 992px) {
+  .clients-grid {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px 2px;
+    align-items: end; /* Switched back to baseline alignment as requested */
+    padding: 0 40px;
+  }
+  .client-logo {
+    height: 75px;
+    min-height: 50px;
+  }
+}
 /* This name text is invisible, like in image_0.png */
 .client-name {
   display: none;
