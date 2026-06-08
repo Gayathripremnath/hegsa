@@ -1073,22 +1073,22 @@
 /* Define a strict 6-column grid to replicate the layout of image_0.png */
 .clients-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 6 equal columns */
+  grid-template-columns: repeat(7, 1fr); /* 6 equal columns */
   
   /* Critical: tight grid, small gap, and alignment */
-  gap: 15px 10px; /* Vert gap | Hor gap, very minimal */
+  gap: 10px 2px; /* Vert gap | Hor gap, very minimal */
   align-items: end; /* Many logos are aligned along the baseline */
   
   /* Prevent the grid from taking up the entire screen width */
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 /* The card container for each logo */
 .client-card {
   background: #ffffff;
-  padding: 10px; 
+  padding: 7px; 
   border: none; 
   border-radius: 0;
   
@@ -1099,10 +1099,10 @@
 
 /* The actual logo image */
 .client-logo {
-  width: 100%; /* Fill the container horizontally */
+  width: 127px; /* Fill the container horizontally */
   
   /* Strict height to force alignment, using min-height helps prevent collapses */
-  height: 60px; /* Forcing standard height for grid consistency */
+  height: 75px; /* Forcing standard height for grid consistency */
   min-height: 50px;
   
   object-fit: contain; /* Ensure full logo is visible without cropping */

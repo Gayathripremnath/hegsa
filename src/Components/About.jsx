@@ -1,6 +1,23 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './About.css';
+import imgc1 from '../assets/imgc1.jpeg';
+import imgc2 from '../assets/imgc2.jpeg';
+import imgc3 from '../assets/imgc3.jpeg';
+import imgc4 from '../assets/imgc4.jpeg';
+import imgc5 from '../assets/imgc5.jpeg';
+import imgc6 from '../assets/imgc6.jpeg';
+import imgc7 from '../assets/imgc7.jpeg';
+import imgc8 from '../assets/imgc8.jpeg';
+import imgc9 from '../assets/imgc9.jpeg';
+import imgc10 from '../assets/imgc10.jpeg';
+import imgc11 from '../assets/imgc11.jpeg';
+import imgc12 from '../assets/imgc12.jpeg';
+import imgc13 from '../assets/imgc13.jpeg';
+import imgc14 from '../assets/imgc14.jpeg';
+import imgc15 from '../assets/imgc15.jpeg';
+import imgc16 from '../assets/imgc16.jpeg';
+
 
 const services = [
   {
@@ -73,28 +90,26 @@ const stats = [
 
 const clients = [
   // ROW 1
-  { logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPpbwW4htSdc9tcZzYiaGI2A-2MVS55qREeQ&s", name: "Sairam Spinning Mills" },
-  { logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Indian_Space_Research_Organisation_Logo.svg/1280px-Indian_Space_Research_Organisation_Logo.svg.png", name: "ISRO" },
-  { logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMoTE457XcJWQxvewy_izZi0m7r4BU3ndpLw&s", name: "Central Bank" },
-  { logo: "https://media.licdn.com/dms/image/v2/D560BAQGsZe-U_qSYyA/company-logo_200_200/company-logo_200_200/0/1703752441790/wheels_india_limited_logo?e=2147483647&v=beta&t=T3KngiqHGHBuQlZI8jaBdkbqfwXP5148nX6UlYCEhv8", name: "Wheels India" },
-  { logo: "https://images.seeklogo.com/logo-png/39/1/eureka-forbes-logo-png_seeklogo-398420.png", name: "Eureka Forbes" },
-  { logo: "https://images.seeklogo.com/logo-png/28/1/ashok-leyland-logo-png_seeklogo-288835.png", name: "Ashok Leyland" },
+  { logo: imgc1, name: "Sairam Spinning Mills" },
+  { logo: imgc2, name: "ISRO" },
+  { logo: imgc3, name: "Central Bank" },
+  { logo: imgc4, name: "Wheels India" },
+  { logo: imgc5, name: "Eureka Forbes" },
+  { logo: imgc6, name: "Ashok Leyland" },
 
   // ROW 2
-  { logo: "https://i.pinimg.com/736x/0e/69/3f/0e693f68feea0c901f30a11fb6fb8b13.jpg", name: "Royal Enfield" },
-  { logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Valeo_Logo.svg/3840px-Valeo_Logo.svg.png", name: "valeo" },
-  { logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWdO1MqcX3e3fqq9QFNXkAlhc1vPu0zFxUkg&s", name: "TVS Motor" },
-  { logo: "https://i.pinimg.com/736x/53/a7/fb/53a7fbb84490a22043c5c8cbbd57e786.jpg", name: "Mahindra" },
+  { logo: imgc7, name: "Royal Enfield" },
+  { logo: imgc8, name: "valeo" },
+  { logo: imgc9, name: "TVS Motor" },
+  { logo: imgc10, name: "Mahindra" },
 
   // ROW 3
-  { logo: "https://i.pinimg.com/736x/0e/69/3f/0e693f68feea0c901f30a11fb6fb8b13.jpg", name: "Royal Enfield" },
-  { logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Valeo_Logo.svg/3840px-Valeo_Logo.svg.png", name: "valeo" },
-  { logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWdO1MqcX3e3fqq9QFNXkAlhc1vPu0zFxUkg&s", name: "TVS Motor" },
-  { logo: "https://i.pinimg.com/736x/53/a7/fb/53a7fbb84490a22043c5c8cbbd57e786.jpg", name: "Mahindra" },
-   { logo: "https://i.pinimg.com/736x/0e/69/3f/0e693f68feea0c901f30a11fb6fb8b13.jpg", name: "Royal Enfield" },
-  { logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Valeo_Logo.svg/3840px-Valeo_Logo.svg.png", name: "valeo" },
-  { logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWdO1MqcX3e3fqq9QFNXkAlhc1vPu0zFxUkg&s", name: "TVS Motor" },
-  { logo: "https://i.pinimg.com/736x/53/a7/fb/53a7fbb84490a22043c5c8cbbd57e786.jpg", name: "Mahindra" },
+  { logo: imgc11, name: "Royal Enfield" },
+  { logo: imgc12, name: "valeo" },
+  { logo: imgc13, name: "TVS Motor" },
+  { logo: imgc14, name: "Mahindra" },
+   { logo: imgc15, name: "Royal Enfield" },
+  { logo: imgc16, name: "valeo" },
 ];
 
 const blogs = [
