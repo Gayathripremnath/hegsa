@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Team.css';
 import user from '../assets/user icon.png';
 
@@ -67,7 +68,9 @@ const Team = () => {
           <div className="join-card">
             <h2>Work With Us</h2>
             <p>We are always looking for talented professionals to join our growing team.</p>
-            <button className="btn-orange">Contact Us→</button>
+            <Link to="/contact">
+  <button className="btn-orange">Contact Us →</button>
+</Link>
           </div>
         </div>
       </section>

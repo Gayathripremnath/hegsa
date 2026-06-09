@@ -14,6 +14,13 @@ const Topbar = () => (
       <div className="top-social">
         <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
         <a href="#"><i className="fa-brands fa-instagram"></i></a>
+        {/* <a
+  href="https://www.instagram.com/hegsa_uae/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <i className="fa-brands fa-instagram"></i>
+</a> */}
       </div>
     </div>
   </div>

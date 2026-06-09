@@ -458,9 +458,11 @@ const AboutSection = () => {
 
                   <h3>{item.title}</h3>
                   <p>{item.desc}</p>
-                  <button type="button" className="blog-read-btn">
-                    READ MORE <i className="fa-solid fa-arrow-right"></i>
-                  </button>
+                  <Link to="/blog" className="blog-read-btn">
+                    <button type="button" className="blog-read-btn">
+                      READ MORE <i className="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </Link>
                 </div>
               </article>
             ))}
