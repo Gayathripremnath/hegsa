@@ -13,8 +13,6 @@ const Topbar = () => (
       <span className="divider">|</span>
       <div className="top-social">
         <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
-        <a href="#"><i className="fa-brands fa-twitter"></i></a>
-        <a href="#"><i className="fa-brands fa-linkedin-in"></i></a>
         <a href="#"><i className="fa-brands fa-instagram"></i></a>
       </div>
     </div>

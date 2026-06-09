@@ -221,11 +221,11 @@ const AboutSection = () => {
                 <li>Stylistic formula method</li>
               </ul>
             </div>
-
-            <div className="footer-action">
-              <button className="about-btn">ABOUT MORE</button>
-            
-            </div>
+<div className="footer-action">
+  <Link to="/about">
+    <button className="about-btn">ABOUT MORE</button>
+  </Link>
+</div>
           </div>
         </div>
       </section>

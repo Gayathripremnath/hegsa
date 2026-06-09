@@ -57,7 +57,9 @@ const Navbar = () => {
 
         <div className="nav-actions">
           <span className="search-icon"><i className="fa-solid fa-magnifying-glass"></i></span>
-          <button className="btn-quote-top">GET A QUOTE →</button>
+<Link to="/contact">
+  <button className="btn-quote-top">GET A QUOTE →</button>
+</Link>
         </div>
 
         <button

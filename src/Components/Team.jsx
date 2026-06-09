@@ -41,9 +41,15 @@ const Team = () => {
               <div key={index} className="team-card">
                 <div className="team-image">
                   <img src={member.image} alt={member.name} />
-                  <div className="team-socials">
-                    <a href="#"><i className="fa-brands fa-whatsapp"></i></a>
-                  </div>
+                <div className="team-socials">
+  <a
+    href="https://wa.me/+971 54 792 7093"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="fa-brands fa-whatsapp"></i>
+  </a>
+</div>
                 </div>
                 <div className="team-info">
                   <h3>{member.name}</h3>
